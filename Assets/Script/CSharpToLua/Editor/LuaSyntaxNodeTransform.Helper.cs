@@ -26,6 +26,7 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using CSharpLua.LuaAst;
+using UnityEngine;
 
 namespace CSharpLua {
   public sealed partial class LuaSyntaxNodeTransform {
@@ -429,6 +430,11 @@ namespace CSharpLua {
       return generator_.IsPropertyFieldOrEventField(symbol);
     }
 
+    /// <summary>
+    /// 判断是否是局部变量
+    /// </summary>
+    /// <param name="symbol"></param>
+    /// <returns></returns>
     private bool IsMoreThanLocalVariables(ISymbol symbol) {
       return generator_.IsMoreThanLocalVariables(symbol);
     }
@@ -1208,10 +1214,16 @@ namespace CSharpLua {
       return invocation;
     }
 
+    /// <summary>
+    /// 构建Attribute
+    /// </summary>
+    /// <param name="attributeLists"></param>
+    /// <returns></returns>
     private List<LuaExpressionSyntax> BuildAttributes(SyntaxList<AttributeListSyntax> attributeLists) {
       var expressions = new List<LuaExpressionSyntax>();
       var attributes = attributeLists.SelectMany(i => i.Attributes);
       foreach (var node in attributes) {
+        // Debug.Log("Attribute: " + node);
         var expression = node.AcceptExpression(this);
         if (expression != null) {
           expressions.Add(expression);
@@ -1339,7 +1351,12 @@ namespace CSharpLua {
       }
     }
 
-    private LuaDocumentStatement BuildDocumentationComment(CSharpSyntaxNode node) {
+    /// <summary>
+    /// 获取文档注释
+    /// </summary>
+    /// <param name="node"></param>
+    /// <returns></returns>
+    private LuaDocumentStatement GetDocumentationComment(CSharpSyntaxNode node) {
       foreach (var trivia in node.GetLeadingTrivia()) {
         if (trivia.IsKind(SyntaxKind.SingleLineDocumentationCommentTrivia)) {
           string triviaText = trivia.ToString();

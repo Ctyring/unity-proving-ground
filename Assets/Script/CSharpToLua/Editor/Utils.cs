@@ -554,6 +554,11 @@ namespace CSharpLua {
       }
     }
 
+    /// <summary>
+    /// 判断注释中是否有Metadata标记
+    /// </summary>
+    /// <param name="symbol"></param>
+    /// <returns></returns>
     public static bool HasMetadataAttribute(this ISymbol symbol) {
       var node = symbol.GetDeclaringSyntaxNode();
       if (node != null) {
@@ -784,7 +789,12 @@ namespace CSharpLua {
       }
     }
 
-    public static bool IsMainEntryPoint(this IMethodSymbol symbol) {
+    /// <summary>
+    /// 检查是否是主入口函数
+    /// </summary>
+    /// <param name="symbol"></param>
+    /// <returns></returns>
+    public static bool CheckMainMethod(this IMethodSymbol symbol) {
       if (symbol.IsStatic && symbol.MethodKind == MethodKind.Ordinary && symbol.TypeArguments.IsEmpty && symbol.ContainingType.TypeArguments.IsEmpty && symbol.Name == "Main") {
         if (symbol.ReturnsVoid || symbol.ReturnType.SpecialType == SpecialType.System_Int32) {
           if (symbol.Parameters.IsEmpty) {

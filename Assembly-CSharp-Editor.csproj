@@ -41,65 +41,34 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\cs\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\pt-BR\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\ja\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\tr\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\ru\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\zh-Hant\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\ja\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\zh-Hans\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\es\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\fr\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\ko\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\ru\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\de\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\fr\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\pl\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\zh-Hant\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\it\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\cs\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\pl\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\pt-BR\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\Microsoft.CodeAnalysis.Analyzers.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\it\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\es\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\ko\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\zh-Hans\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\vb\de\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-    <Analyzer Include="E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Analyzers.3.3.4\analyzers\dotnet\cs\tr\Microsoft.CodeAnalysis.Analyzers.resources.dll" />
-  </ItemGroup>
-  <ItemGroup>
-     <Compile Include="Assets\Script\CSharpToLua\Editor\CSharpToLuaWindow.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.Helper.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaCompilationUnitSyntax.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaIfStatementSyntax.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaIdentifierNameSyntax.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\Compiler.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaLocalDeclarationStatementSyntax.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\XmlDocumentationProvider.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaIdentifierNameSyntax.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaLoopStatement.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.Object.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\XmlMetaProvider.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaBlockSyntax.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.Query.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaTypeDeclarationSyntax.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaSyntaxNode.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaMemberAccessExpressionSyntax.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaExpressionSyntax.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxGenerator.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaLiteralExpressionSyntax.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaWrapFunctionStatementSyntax.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\Utils.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaStatementSyntax.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaInvocationExpressionSyntax.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaTableExpression.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxGenerator.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaFunctionExpressSyntax.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.Helper.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\XmlMetaProvider.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaBlockSyntax.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaInvocationExpressionSyntax.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaTypeDeclarationSyntax.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.Query.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaExpressionSyntax.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaStatementSyntax.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaTableExpression.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.Object.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\CSharpToLuaWindow.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaRenderer.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaCompilationUnitSyntax.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaIfStatementSyntax.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaLocalDeclarationStatementSyntax.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\XmlDocumentationProvider.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaSyntaxNode.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestMethodDeclaration.cs" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\CoreSystem\Reflection" />
      <Folder Include="Assets\Script\CSharpToLua\Editor" />
      <Folder Include="Assets\NuGet\Editor" />
@@ -108,9 +77,12 @@
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\LuaAst" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\CoreSystem\Globalization" />
+     <Folder Include="Assets\Script\CSharpToLua\Editor\input" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\CoreSystem\Text" />
+     <None Include="Assets\Script\CSharpToLua\Editor\UnityEngine.xml" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\CoreSystem\Threading" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\Sample" />
+     <Folder Include="Assets\Script\CSharpToLua\Editor\output" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\CoreSystem\Collections" />
      <None Include="Assets\Script\CSharpToLua\Editor\System.xml" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\CoreSystem\Numerics" />
@@ -375,8 +347,14 @@
      <Reference Include="UnityEditor.WindowsStandalone.Extensions">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.27f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
+     <Reference Include="System.Text.Encoding.CodePages">
+     <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\System.Text.Encoding.CodePages.7.0.0\lib\netstandard2.0\System.Text.Encoding.CodePages.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
      <HintPath>E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Collections.Immutable">
+     <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\System.Collections.Immutable.7.0.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
      <HintPath>E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
@@ -390,11 +368,20 @@
      <Reference Include="Unity.VisualScripting.IonicZip">
      <HintPath>E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
      </Reference>
-     <Reference Include="unityplastic">
-     <HintPath>E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+     <Reference Include="System.Reflection.Metadata">
+     <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\System.Reflection.Metadata.7.0.0\lib\netstandard2.0\System.Reflection.Metadata.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.CodeAnalysis">
+     <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Common.4.6.0\lib\netstandard2.0\Microsoft.CodeAnalysis.dll</HintPath>
      </Reference>
      <Reference Include="log4netPlastic">
      <HintPath>E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Runtime.CompilerServices.Unsafe">
+     <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+     </Reference>
+     <Reference Include="unityplastic">
+     <HintPath>E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -402,26 +389,11 @@
      <Reference Include="ReportGeneratorMerged">
      <HintPath>E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.testtools.codecoverage@1.2.3\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
-     <Reference Include="NugetForUnity">
-     <HintPath>E:\UnityProject\unity-proving-ground\Assets\NuGet\Editor\NugetForUnity.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.CompilerServices.Unsafe">
-     <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Collections.Immutable">
-     <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\System.Collections.Immutable.7.0.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Reflection.Metadata">
-     <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\System.Reflection.Metadata.7.0.0\lib\netstandard2.0\System.Reflection.Metadata.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Text.Encoding.CodePages">
-     <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\System.Text.Encoding.CodePages.7.0.0\lib\netstandard2.0\System.Text.Encoding.CodePages.dll</HintPath>
-     </Reference>
-     <Reference Include="Microsoft.CodeAnalysis">
-     <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.Common.4.6.0\lib\netstandard2.0\Microsoft.CodeAnalysis.dll</HintPath>
-     </Reference>
      <Reference Include="Microsoft.CodeAnalysis.CSharp">
      <HintPath>E:\UnityProject\unity-proving-ground\Assets\Packages\Microsoft.CodeAnalysis.CSharp.4.6.0\lib\netstandard2.0\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+     </Reference>
+     <Reference Include="NugetForUnity">
+     <HintPath>E:\UnityProject\unity-proving-ground\Assets\NuGet\Editor\NugetForUnity.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

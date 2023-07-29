@@ -1,0 +1,1204 @@
+Using pre-set license
+Built from '2021.3/china_unity/release' branch; Version is '2021.3.27f1c1 (2776fa9c5d2b) revision 2586362'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'zh' Physical Memory: 32699 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.27f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/UnityProject/unity-proving-ground
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62682
+Successfully changed project path to: E:/UnityProject/unity-proving-ground
+E:/UnityProject/unity-proving-ground
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [944] Host "[IP] 10.11.136.163 [Port] 0 [Flags] 2 [Guid] 1994757251 [EditorId] 1994757251 [Version] 1048832 [Id] WindowsEditor(7,SK-20220509XPEE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [944] Host "[IP] 10.11.136.163 [Port] 0 [Flags] 2 [Guid] 1994757251 [EditorId] 1994757251 [Version] 1048832 [Id] WindowsEditor(7,SK-20220509XPEE) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+AS: AutoStreaming module initializing.
+Refreshing native plugins compatible for Editor in 106.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.27f1c1 (2776fa9c5d2b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.27f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/UnityProject/unity-proving-ground/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   NVIDIA
+    VRAM:     6043 MB
+    Driver:   31.0.15.3179
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.27f1c1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.27f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.27f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.27f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009000 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 94.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.861 seconds
+Domain Reload Profiling:
+	ReloadAssembly (862ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (589ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (149ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (328ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (94ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (154ms)
+				ProcessInitializeOnLoadMethodAttributes (68ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.048935 seconds.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisCorrectnessRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisReleaseTrackingRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/CorrectnessRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/PortedFromFxCopRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/PortedFromFxCopRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisCompatibilityRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisDocumentationRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/LibraryRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/CorrectnessRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/AllRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisDocumentationRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisCorrectnessRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisDesignRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/AllRulesDisabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisDesignRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisPerformanceRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisLocalizationRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisReleaseTrackingRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisLocalizationRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/AllRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/LibraryRulesEnabled.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisCompatibilityRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets already contains a ruleset file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/DataflowRulesDefault.ruleset. Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/rulesets/MicrosoftCodeAnalysisPerformanceRulesDefault.ruleset will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_4_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_2_9_8_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_4_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_4_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_2_9_8_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_4_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_4_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_4_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_4_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_2_9_8_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_4_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_4_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_2_9_8_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_4_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_2_9_8_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_4_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_4_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_4_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_2_9_8_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_2_9_8_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_2_9_8_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_2_9_8_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_4_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_4_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_4_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_2_9_8_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_2_9_8_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_2_9_8_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_2_9_8_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_4_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_2_9_8_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_4_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_2_9_8_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_4_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_4_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_4_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_2_9_8_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_2_9_8_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_2_9_8_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_2_9_8_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_4_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_4_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_2_9_8_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_2_9_8_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_2_9_8_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_2_9_8_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_2_9_8_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_4_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_2_9_8_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_4_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_2_9_8_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_4_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_2_9_8_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_4_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_2_9_8_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_4_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_2_9_8_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_4_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_2_9_8_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_4_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_2_9_8_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_2_9_8_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_2_9_8_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_2_9_8_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_4_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_2_9_8_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_2_9_8_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_2_9_8_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_2_9_8_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_4_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_4_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_4_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_4_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_4_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_4_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_4_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_4_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_4_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_4_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_2_9_8_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_4_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_2_9_8_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_2_9_8_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_4_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_4_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_4_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_4_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_4_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_2_9_8_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_2_9_8_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_2_9_8_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_2_9_8_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_2_9_8_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_4_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_4_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_4_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_4_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_2_9_8_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_2_9_8_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_2_9_8_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_2_9_8_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_2_9_8_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_4_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_4_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_4_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_2_9_8_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_2_9_8_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_2_9_8_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_2_9_8_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_2_9_8_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_2_9_8_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_2_9_8_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_4_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_4_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_2_9_8_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_4_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_2_9_8_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_4_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_2_9_8_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_2_9_8_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_2_9_8_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_2_9_8_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_2_9_8_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_2_9_8_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_4_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_4_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_2_9_8_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_2_9_8_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_2_9_8_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_4_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_2_9_8_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_2_9_8_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_4_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_2_9_8_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_2_9_8_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_4_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_4_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_4_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_4_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_4_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_4_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_2_9_8_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_2_9_8_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_2_9_8_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_2_9_8_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_2_9_8_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_4_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_2_9_8_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_2_9_8_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_4_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_4_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_2_9_8_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_4_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_4_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_4_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_2_9_8_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_4_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_4_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_2_9_8_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_4_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_4_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_2_9_8_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_2_9_8_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_2_9_8_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_4_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_4_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_4_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_2_9_8_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_4_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_2_9_8_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_2_9_8_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_2_9_8_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_4_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_2_9_8_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_4_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_4_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_4_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_2_9_8_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_4_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_4_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_2_9_8_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_4_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_4_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_2_9_8_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_4_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_4_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_4_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_2_9_8_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_3_3_recommended.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_2_9_8_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_4_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_2_9_8_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_2_9_8_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscorrectness_3_3_recommended_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisreleasetracking_4_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysiscompatibility_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_4_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_4_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_all.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_2_9_8_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_3_3_3_minimum.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_3_3_3_none.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_3_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdesign_3_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_3_3_none_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysislocalization_4_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevellibrary_3_3_3_default_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisdocumentation_4_3_all_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelmicrosoftcodeanalysisperformance_3_3_3_default.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevel_2_9_8_minimum_warnaserror.globalconfig will be ignored.
+Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config already contains a globalconfig file: Assets/Packages/Microsoft.CodeAnalysis.Analyzers.3.3.4/buildTransitive/config/analysislevelcorrectness_4_3_all.globalconfig will be ignored.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+DisplayProgressbar: Restoring NuGet Packages
+Mono: successfully reloaded assembly
+- Completed reload, in  4.748 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4750ms)
+		BeginReloadAssembly (381ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (3825ms)
+			LoadAssemblies (273ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (635ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (117ms)
+			SetupLoadedEditorAssemblies (2779ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (2438ms)
+				ProcessInitializeOnLoadMethodAttributes (155ms)
+				AfterProcessingInitializeOnLoad (43ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 2.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3641 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 584 unused Assets / (135.1 KB). Loaded Objects now: 3545.
+Memory consumption went from 126.6 MB to 126.5 MB.
+Total: 5.796200 ms (FindLiveObjects: 0.306300 ms CreateObjectMapping: 0.216500 ms MarkObjects: 4.963000 ms  DeleteObjects: 0.309300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 239154.258088 seconds.
+  path: Assets/Script/CSharpToLua/Editor/CoreSystem.Lua/CoreSystem/Collections/Dictionary.lua
+  artifactKey: Guid(f1d87e6306f94cbc954a992fb0113aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CSharpToLua/Editor/CoreSystem.Lua/CoreSystem/Collections/Dictionary.lua using Guid(f1d87e6306f94cbc954a992fb0113aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66714df6822e5d939d0638e36f24acd7') in 0.060781 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015000 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.519 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1520ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (1200ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (441ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (547ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (408ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (21.9 KB). Loaded Objects now: 3549.
+Memory consumption went from 115.5 MB to 115.5 MB.
+Total: 3.356600 ms (FindLiveObjects: 0.298100 ms CreateObjectMapping: 0.220300 ms MarkObjects: 2.801900 ms  DeleteObjects: 0.035300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 173.179894 seconds.
+  path: Assets/Script/CSharpToLua
+  artifactKey: Guid(4e3aff905fdc08c4494c9177536d68b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CSharpToLua using Guid(4e3aff905fdc08c4494c9177536d68b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '532d313b40f875f53da293b48eaaba5a') in 0.005904 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.045896 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.480 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4481ms)
+		BeginReloadAssembly (536ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (26ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (302ms)
+		EndReloadAssembly (3482ms)
+			LoadAssemblies (188ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1512ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (547ms)
+			SetupLoadedEditorAssemblies (1114ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (257ms)
+				ProcessInitializeOnLoadAttributes (802ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (51ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (21.9 KB). Loaded Objects now: 3552.
+Memory consumption went from 115.5 MB to 115.5 MB.
+Total: 3.397600 ms (FindLiveObjects: 0.263600 ms CreateObjectMapping: 0.144800 ms MarkObjects: 2.951100 ms  DeleteObjects: 0.035800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.019081 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.781 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2781ms)
+		BeginReloadAssembly (432ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (276ms)
+		EndReloadAssembly (1925ms)
+			LoadAssemblies (134ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (882ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (190ms)
+			SetupLoadedEditorAssemblies (689ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (167ms)
+				ProcessInitializeOnLoadAttributes (478ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (21.9 KB). Loaded Objects now: 3555.
+Memory consumption went from 115.5 MB to 115.5 MB.
+Total: 6.609700 ms (FindLiveObjects: 0.270500 ms CreateObjectMapping: 1.355200 ms MarkObjects: 4.954600 ms  DeleteObjects: 0.027400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014372 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.605 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2606ms)
+		BeginReloadAssembly (182ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (2272ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1018ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (972ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (178ms)
+				ProcessInitializeOnLoadAttributes (745ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (21.9 KB). Loaded Objects now: 3558.
+Memory consumption went from 115.5 MB to 115.5 MB.
+Total: 3.268800 ms (FindLiveObjects: 0.232700 ms CreateObjectMapping: 0.144500 ms MarkObjects: 2.868500 ms  DeleteObjects: 0.022200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013776 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.618 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2619ms)
+		BeginReloadAssembly (396ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (2061ms)
+			LoadAssemblies (338ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (776ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (85ms)
+			SetupLoadedEditorAssemblies (868ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (692ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (55ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (22.0 KB). Loaded Objects now: 3561.
+Memory consumption went from 115.5 MB to 115.5 MB.
+Total: 3.012000 ms (FindLiveObjects: 0.261100 ms CreateObjectMapping: 0.194500 ms MarkObjects: 2.531300 ms  DeleteObjects: 0.023500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.101729 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.600 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2600ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (2278ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (657ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (1376ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (249ms)
+				ProcessInitializeOnLoadAttributes (917ms)
+				ProcessInitializeOnLoadMethodAttributes (155ms)
+				AfterProcessingInitializeOnLoad (44ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (21.9 KB). Loaded Objects now: 3564.
+Memory consumption went from 115.5 MB to 115.5 MB.
+Total: 5.461600 ms (FindLiveObjects: 0.382800 ms CreateObjectMapping: 0.317500 ms MarkObjects: 4.713800 ms  DeleteObjects: 0.045600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015071 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.251 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2252ms)
+		BeginReloadAssembly (203ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1891ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (479ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (1036ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (176ms)
+				ProcessInitializeOnLoadAttributes (802ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (21.9 KB). Loaded Objects now: 3567.
+Memory consumption went from 115.5 MB to 115.5 MB.
+Total: 5.472700 ms (FindLiveObjects: 0.285200 ms CreateObjectMapping: 0.171900 ms MarkObjects: 4.984800 ms  DeleteObjects: 0.029200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.020969 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.656 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2657ms)
+		BeginReloadAssembly (485ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (66ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (237ms)
+		EndReloadAssembly (2037ms)
+			LoadAssemblies (157ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (469ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (1170ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (1034ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (32ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (69ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (22.0 KB). Loaded Objects now: 3570.
+Memory consumption went from 115.5 MB to 115.5 MB.
+Total: 12.610800 ms (FindLiveObjects: 1.499900 ms CreateObjectMapping: 0.278100 ms MarkObjects: 10.798900 ms  DeleteObjects: 0.032500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016507 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\UnityProject\unity-proving-ground\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.896 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1897ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1560ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (524ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (826ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (377ms)
+				ProcessInitializeOnLoadAttributes (392ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (21.9 KB). Loaded Objects now: 3573.
+Memory consumption went from 115.5 MB to 115.5 MB.
+Total: 76.386600 ms (FindLiveObjects: 0.330100 ms CreateObjectMapping: 0.258700 ms MarkObjects: 75.760800 ms  DeleteObjects: 0.034800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -30,6 +30,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Emit;
 
 using CSharpLua.LuaAst;
+using UnityEngine;
 
 namespace CSharpLua {
   internal sealed class PartialTypeDeclaration : IComparable<PartialTypeDeclaration> {
@@ -421,6 +422,11 @@ namespace CSharpLua {
       forcePublicSymbols_.Add(symbol.OriginalDefinition);
     }
 
+    /// <summary>
+    /// 判断是否要强制为public
+    /// </summary>
+    /// <param name="symbol"></param>
+    /// <returns></returns>
     internal bool IsForcePublicSymbol(ISymbol symbol) {
       return forcePublicSymbols_.Contains(symbol.OriginalDefinition);
     }
@@ -1397,6 +1403,11 @@ namespace CSharpLua {
       return true;
     }
 
+    /// <summary>
+    /// 判断是否是MonoBehaviour的特殊方法
+    /// </summary>
+    /// <param name="symbol"></param>
+    /// <returns></returns>
     public bool IsMonoBehaviourSpecialMethod(IMethodSymbol symbol) {
       if (monoBehaviourSpecialMethodNames_ != null && symbol.ContainingType.Is(monoBehaviourTypeSymbol_)) {
         return monoBehaviourSpecialMethodNames_.Contains(symbol.Name) || symbol.Name.StartsWith("On");
@@ -1671,11 +1682,18 @@ namespace CSharpLua {
       };
     }
 
+    /// <summary>
+    /// 判断是否是局部变量
+    /// </summary>
+    /// <param name="symbol"></param>
+    /// <returns></returns>
     public bool IsMoreThanLocalVariables(ISymbol symbol) {
+      // Debug.Log("[IsMoreThanLocalVariables] symbol: " + symbol + " kind: " + symbol.Kind);
       Contract.Assert(symbol.IsFromCode());
       return isMoreThanLocalVariables_.GetOrAdd(symbol, symbol => {
         const int kMaxLocalVariablesCount = LuaSyntaxNode.kLocalVariablesMaxCount - 5;
         var methods = symbol.ContainingType.GetMembers().Where(i => {
+          // Debug.Log("[IsMoreThanLocalVariables] name: " + i + " kind: " + i.Kind);
           switch (i.Kind) {
             case SymbolKind.Method: {
               var method = (IMethodSymbol)i;
@@ -1938,9 +1956,17 @@ namespace CSharpLua {
       return name;
     }
 
+    /// <summary>
+    /// 获取类型名
+    /// </summary>
+    /// <param name="symbol"></param>
+    /// <param name="transform"></param>
+    /// <returns></returns>
     internal LuaExpressionSyntax GetTypeName(ISymbol symbol, LuaSyntaxNodeTransform transform = null) {
       switch (symbol.Kind) {
+        // 泛型 返回 T
         case SymbolKind.TypeParameter: {
+          Debug.Log("[GetTypeName] type parameter: " + symbol);
           return symbol.Name;
         }
         case SymbolKind.ArrayType: {
@@ -1954,6 +1980,7 @@ namespace CSharpLua {
           }
           LuaExpressionSyntax luaExpression = invocation;
           transform?.ImportGenericTypeName(ref luaExpression, arrayType);
+          Debug.Log("[GetTypeName] array type: " + symbol);
           return luaExpression;
         }
         case SymbolKind.PointerType: {

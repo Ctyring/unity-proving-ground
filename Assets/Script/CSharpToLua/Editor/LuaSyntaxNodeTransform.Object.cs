@@ -346,7 +346,7 @@ namespace CSharpLua {
       IMethodSymbol symbol = semanticModel_.GetDeclaredSymbol(node);
       methodInfos_.Push(new MethodInfo(symbol));
 
-      var document = BuildDocumentationComment(node);
+      var document = GetDocumentationComment(node);
       var attributes = BuildAttributes(node.AttributeLists);
       document?.UnIgnore();
 
@@ -1221,7 +1221,7 @@ namespace CSharpLua {
       function.ParameterList.Parameters.AddRange(parameterList.Parameters);
       PushFunction(function);
 
-      var comments = BuildDocumentationComment(node);
+      var comments = GetDocumentationComment(node);
       if (node.Body != null) {
         var block = node.Body.Accept<LuaBlockSyntax>(this);
         function.AddStatements(block.Statements);
