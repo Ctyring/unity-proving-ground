@@ -505,6 +505,7 @@ namespace CSharpLua {
 
         private INamedTypeSymbol VisitTypeDeclaration(INamedTypeSymbol typeSymbol, TypeDeclarationSyntax node,
             LuaTypeDeclarationSyntax typeDeclaration) {
+            // Debug.Log("[VisitTypeDeclaration]: typeSymbol" + typeSymbol.Name);
             if (node.Modifiers.IsPartial()) {
                 if (typeSymbol.DeclaringSyntaxReferences.Length > 1) {
                     generator_.AddPartialTypeDeclaration(typeSymbol, node, typeDeclaration, CurCompilationUnit);
@@ -2602,6 +2603,7 @@ namespace CSharpLua {
                 bool ignoreGeneric = generator_.XmlMetaProvider.IsMethodIgnoreGeneric(symbol);
                 if (!ignoreGeneric) {
                     if (symbol.MethodKind == MethodKind.DelegateInvoke) {
+                        // Debug.Log("[BuildInvocationArguments]delegate invoke: " + symbol.Name);
                         foreach (var typeArgument in symbol.ContainingType.TypeArguments) {
                             if (typeArgument.TypeKind == TypeKind.TypeParameter) {
                                 LuaExpressionSyntax typeName = GetTypeName(typeArgument);
@@ -3857,6 +3859,7 @@ namespace CSharpLua {
         }
 
         public override LuaSyntaxNode VisitLocalDeclarationStatement(LocalDeclarationStatementSyntax node) {
+            Debug.Log("[VisitLocalDeclarationStatement] node: " + node);
             var declaration = node.Declaration.Accept<LuaVariableDeclarationSyntax>(this);
             if (node.UsingKeyword.IsKeyword()) {
                 var block = CurBlock;
@@ -3903,6 +3906,7 @@ namespace CSharpLua {
             ITypeSymbol typeSymbol = null;
             var variableListDeclaration = new LuaVariableListDeclarationSyntax();
             foreach (var variable in node.Variables) {
+                // Debug.Log("[VisitVariableDeclaration] variable: " + variable);
                 bool isRefIgnore = false;
                 if (variable.Initializer != null && variable.Initializer.Value.IsKind(SyntaxKind.RefExpression)) {
                     var value = (RefExpressionSyntax)variable.Initializer.Value;
@@ -3948,7 +3952,6 @@ namespace CSharpLua {
                     }
                 }
             }
-
             bool isMultiNil = variableListDeclaration.Variables.Count > 0 &&
                               variableListDeclaration.Variables.All(i => i.Initializer == null);
             if (isMultiNil) {
@@ -3959,7 +3962,6 @@ namespace CSharpLua {
 
                 return declarationStatement;
             }
-
             return variableListDeclaration;
         }
 

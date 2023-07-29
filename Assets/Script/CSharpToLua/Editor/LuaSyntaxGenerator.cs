@@ -1434,6 +1434,7 @@ namespace CSharpLua {
       public PretreatmentChecker(LuaSyntaxGenerator generator) {
         generator_ = generator;
         foreach (SyntaxTree syntaxTree in generator.compilation_.SyntaxTrees) {
+          Debug.Log("[PretreatmentChecker] type: " + syntaxTree.GetRoot().GetType());
           Visit(syntaxTree.GetRoot());
         }
         Check();
@@ -1966,7 +1967,7 @@ namespace CSharpLua {
       switch (symbol.Kind) {
         // 泛型 返回 T
         case SymbolKind.TypeParameter: {
-          Debug.Log("[GetTypeName] type parameter: " + symbol);
+          // Debug.Log("[GetTypeName] type parameter: " + symbol);
           return symbol.Name;
         }
         case SymbolKind.ArrayType: {
@@ -1980,7 +1981,7 @@ namespace CSharpLua {
           }
           LuaExpressionSyntax luaExpression = invocation;
           transform?.ImportGenericTypeName(ref luaExpression, arrayType);
-          Debug.Log("[GetTypeName] array type: " + symbol);
+          // Debug.Log("[GetTypeName] array type: " + symbol);
           return luaExpression;
         }
         case SymbolKind.PointerType: {

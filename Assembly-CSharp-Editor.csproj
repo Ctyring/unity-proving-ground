@@ -60,6 +60,7 @@
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaExpressionSyntax.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaStatementSyntax.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaTableExpression.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestDelegateDeclaration.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.Object.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\CSharpToLuaWindow.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaRenderer.cs" />

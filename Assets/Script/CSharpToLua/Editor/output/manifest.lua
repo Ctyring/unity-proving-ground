@@ -3,10 +3,14 @@ return function (path)
   return System.init({
     path = path,
     files = {
+      "TestDelegateDeclaration",
       "TestMethodDeclaration"
     },
     types = {
-      "Script.CSharpToLua.Editor.input.Person"
-    }
+      "Script.CSharpToLua.Editor.input.MyClass",
+      "Script.CSharpToLua.Editor.input.Person",
+      "Script.CSharpToLua.Editor.input.Program"
+    },
+    Main = "Script.CSharpToLua.Editor.input.Program.Main"
   })
 end
