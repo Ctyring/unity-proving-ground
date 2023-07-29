@@ -23,7 +23,7 @@ using System.Reflection;
 using UnityEngine;
 
 namespace CSharpLua {
-  public sealed class Compiler {
+  public class Compiler {
     private const string kDllSuffix = ".dll";
     private const string kSystemMeta = "~/System.xml";
     private const char kLuaModuleSuffix = '!';

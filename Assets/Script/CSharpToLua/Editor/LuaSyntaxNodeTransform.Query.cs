@@ -24,7 +24,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using CSharpLua.LuaAst;
 
 namespace CSharpLua {
-  public sealed partial class LuaSyntaxNodeTransform {
+  public partial class LuaSyntaxNodeTransform {
     private const string kQueryPlaceholderConflictName = "as";
 
     private interface IQueryRangeVariable {
@@ -32,7 +32,7 @@ namespace CSharpLua {
       void AddPackCount();
     }
 
-    private sealed class QueryIdentifier : IQueryRangeVariable {
+    private class QueryIdentifier : IQueryRangeVariable {
       public SyntaxToken Identifier { get; }
       private readonly LuaIdentifierNameSyntax name_;
       private int packCount_;
@@ -66,7 +66,7 @@ namespace CSharpLua {
       }
     }
 
-    private sealed class QueryPackVariable : IQueryRangeVariable {
+    private class QueryPackVariable : IQueryRangeVariable {
       private readonly IQueryRangeVariable x1_;
       private readonly IQueryRangeVariable x2_;
 

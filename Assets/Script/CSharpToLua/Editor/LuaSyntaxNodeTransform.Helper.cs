@@ -29,8 +29,8 @@ using CSharpLua.LuaAst;
 using UnityEngine;
 
 namespace CSharpLua {
-  public sealed partial class LuaSyntaxNodeTransform {
-    private sealed class FunctionUpValuesInfo {
+  public partial class LuaSyntaxNodeTransform {
+    private class FunctionUpValuesInfo {
       private readonly HashSet<string> strings_ = new();
       private readonly HashSet<ISymbol> symbols_ = new(SymbolEqualityComparer.Default);
       private readonly Dictionary<ISymbol, bool> maxSymbols_ = new(SymbolEqualityComparer.Default);
@@ -88,7 +88,7 @@ namespace CSharpLua {
     private readonly Stack<bool> checks_ = new();
 
     private abstract class LuaSyntaxSearcher : CSharpSyntaxWalker {
-      private sealed class FoundException : Exception {
+      private class FoundException : Exception {
       }
 
       protected void Found() {
@@ -105,7 +105,7 @@ namespace CSharpLua {
       }
     }
 
-    private sealed class LocalVarSearcher : LuaSyntaxSearcher {
+    private class LocalVarSearcher : LuaSyntaxSearcher {
       private readonly string name_;
 
       public LocalVarSearcher(string name) {
@@ -262,7 +262,7 @@ namespace CSharpLua {
       return identifierName;
     }
 
-    private sealed class ContinueSearcher : LuaSyntaxSearcher {
+    private class ContinueSearcher : LuaSyntaxSearcher {
       public override void VisitContinueStatement(ContinueStatementSyntax node) {
         Found();
       }
@@ -1569,7 +1569,7 @@ namespace CSharpLua {
       }
     }
 
-    private sealed class SymbolAssignmentSearcher : LuaSyntaxSearcher {
+    private class SymbolAssignmentSearcher : LuaSyntaxSearcher {
       private readonly LuaSyntaxGenerator generator_;
       private readonly ISymbol symbol_;
       private readonly HashSet<IMethodSymbol> methods_ = new(SymbolEqualityComparer.Default);
@@ -1703,7 +1703,7 @@ namespace CSharpLua {
       return null;
     }
 
-    private sealed class ClosureVariableSearcher : LuaSyntaxSearcher {
+    private class ClosureVariableSearcher : LuaSyntaxSearcher {
       private readonly ISymbol symbol_;
       private readonly LuaSyntaxGenerator generator_;
       private int closureCounter_;
@@ -1971,7 +1971,7 @@ namespace CSharpLua {
       return 0;
     }
 
-    private sealed class YieldStatementSearcher : LuaSyntaxSearcher {
+    private class YieldStatementSearcher : LuaSyntaxSearcher {
       public override void VisitYieldStatement(YieldStatementSyntax node) {
         Found();
       }
@@ -2009,7 +2009,7 @@ namespace CSharpLua {
       return false;
     }
 
-    private sealed class RecursionCallSearcher : LuaSyntaxSearcher {
+    private class RecursionCallSearcher : LuaSyntaxSearcher {
       private readonly LuaSyntaxGenerator generator_;
       private readonly IMethodSymbol symbol_;
 

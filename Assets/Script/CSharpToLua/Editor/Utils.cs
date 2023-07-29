@@ -34,12 +34,12 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using CSharpLua.LuaAst;
 
 namespace CSharpLua {
-  public sealed class CmdArgumentException : Exception {
+  public class CmdArgumentException : Exception {
     public CmdArgumentException(string message) : base(message) {
     }
   }
 
-  public sealed class CompilationErrorException : Exception {
+  public class CompilationErrorException : Exception {
     public SyntaxNode SyntaxNode { get; }
 
     public CompilationErrorException(string message) : base(message) {
@@ -58,7 +58,7 @@ namespace CSharpLua {
     }
   }
 
-  public sealed class BugErrorException : Exception {
+  public class BugErrorException : Exception {
     private const string kIssueAddress = "Compiler has a bug, thanks to commit issue at https://github.com/yanghuan/CSharp.lua/issue";
 
     public BugErrorException(SyntaxNode node, Exception e)
@@ -69,10 +69,10 @@ namespace CSharpLua {
     }
   }
 
-  public sealed class ConcurrentList<T> : ConcurrentBag<T> {
+  public class ConcurrentList<T> : ConcurrentBag<T> {
   }
 
-  public sealed class ConcurrentHashSet<T> : IEnumerable<T> {
+  public class ConcurrentHashSet<T> : IEnumerable<T> {
     private readonly ConcurrentDictionary<T, bool> dict_;
 
     public ConcurrentHashSet() {

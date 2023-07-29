@@ -19,7 +19,7 @@ using System.Collections.Generic;
 
 namespace CSharpLua.LuaAst {
   public abstract class LuaExpressionSyntax : LuaSyntaxNode {
-    private sealed class EmptyLuaExpressionSyntax : LuaExpressionSyntax {
+    private class EmptyLuaExpressionSyntax : LuaExpressionSyntax {
       internal override void Render(LuaRenderer renderer) {
       }
     }
@@ -97,7 +97,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaAssignmentExpressionSyntax : LuaExpressionSyntax {
+  public class LuaAssignmentExpressionSyntax : LuaExpressionSyntax {
     public LuaExpressionSyntax Left { get; }
     public string OperatorToken => Tokens.Equals;
     public LuaExpressionSyntax Right { get; }
@@ -112,7 +112,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaMultipleAssignmentExpressionSyntax : LuaExpressionSyntax {
+  public class LuaMultipleAssignmentExpressionSyntax : LuaExpressionSyntax {
     public LuaSyntaxList<LuaExpressionSyntax> Lefts { get; } = new();
     public string OperatorToken => Tokens.Equals;
     public LuaSyntaxList<LuaExpressionSyntax> Rights { get; } = new();
@@ -122,7 +122,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaLineMultipleExpressionSyntax : LuaExpressionSyntax {
+  public class LuaLineMultipleExpressionSyntax : LuaExpressionSyntax {
     public LuaSyntaxList<LuaExpressionSyntax> Assignments { get; } = new();
 
     internal override void Render(LuaRenderer renderer) {
@@ -130,7 +130,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaBinaryExpressionSyntax : LuaExpressionSyntax {
+  public class LuaBinaryExpressionSyntax : LuaExpressionSyntax {
     public LuaExpressionSyntax Left { get; }
     public string OperatorToken { get; }
     public LuaExpressionSyntax Right { get; }
@@ -148,7 +148,7 @@ namespace CSharpLua.LuaAst {
     public bool IsLogic => OperatorToken == Tokens.And || OperatorToken == Tokens.Or;
   }
 
-  public sealed class LuaPrefixUnaryExpressionSyntax : LuaExpressionSyntax {
+  public class LuaPrefixUnaryExpressionSyntax : LuaExpressionSyntax {
     public LuaExpressionSyntax Operand { get; }
     public string OperatorToken { get; }
 
@@ -162,7 +162,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaParenthesizedExpressionSyntax : LuaExpressionSyntax {
+  public class LuaParenthesizedExpressionSyntax : LuaExpressionSyntax {
     public LuaExpressionSyntax Expression { get; }
     public string OpenParenToken => Tokens.OpenParentheses;
     public string CloseParenToken => Tokens.CloseParentheses;
@@ -176,7 +176,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaCodeTemplateExpressionSyntax : LuaExpressionSyntax {
+  public class LuaCodeTemplateExpressionSyntax : LuaExpressionSyntax {
     public readonly LuaSyntaxList<LuaExpressionSyntax> Expressions = new();
 
     public LuaCodeTemplateExpressionSyntax() { }
@@ -190,7 +190,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaArrayRankSpecifierSyntax : LuaSyntaxNode {
+  public class LuaArrayRankSpecifierSyntax : LuaSyntaxNode {
     public int Rank { get; }
     public readonly List<LuaExpressionSyntax> Sizes = new();
 
@@ -199,7 +199,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaArrayTypeAdapterExpressionSyntax : LuaExpressionSyntax {
+  public class LuaArrayTypeAdapterExpressionSyntax : LuaExpressionSyntax {
     public LuaExpressionSyntax TypeExpression { get; }
     public LuaArrayRankSpecifierSyntax RankSpecifier { get; }
 
@@ -219,7 +219,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaInternalMethodExpressionSyntax : LuaExpressionSyntax {
+  public class LuaInternalMethodExpressionSyntax : LuaExpressionSyntax {
     public LuaExpressionSyntax Expression { get; }
 
     public LuaInternalMethodExpressionSyntax(LuaExpressionSyntax expression) {
@@ -231,7 +231,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaSequenceListExpressionSyntax : LuaExpressionSyntax {
+  public class LuaSequenceListExpressionSyntax : LuaExpressionSyntax {
     public readonly LuaSyntaxList<LuaExpressionSyntax> Expressions = new();
 
     public LuaSequenceListExpressionSyntax() {

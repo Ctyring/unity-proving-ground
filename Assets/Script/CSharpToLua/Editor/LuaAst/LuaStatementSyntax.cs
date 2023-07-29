@@ -23,7 +23,7 @@ namespace CSharpLua.LuaAst {
     public Semicolon SemicolonToken => Tokens.Semicolon;
     public bool ForceSemicolon { get; set; }
 
-    private sealed class EmptyLuaStatementSyntax : LuaStatementSyntax {
+    private class EmptyLuaStatementSyntax : LuaStatementSyntax {
       internal override void Render(LuaRenderer renderer) {
       }
     }
@@ -35,7 +35,7 @@ namespace CSharpLua.LuaAst {
     public static readonly LuaStatementSyntax Empty = new EmptyLuaStatementSyntax();
   }
 
-  public sealed class LuaExpressionStatementSyntax : LuaStatementSyntax {
+  public class LuaExpressionStatementSyntax : LuaStatementSyntax {
     public LuaExpressionSyntax Expression { get; }
 
     public LuaExpressionStatementSyntax(LuaExpressionSyntax expression) {
@@ -51,7 +51,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaStatementListSyntax : LuaStatementSyntax {
+  public class LuaStatementListSyntax : LuaStatementSyntax {
     public readonly LuaSyntaxList<LuaStatementSyntax> Statements = new();
 
     internal override void Render(LuaRenderer renderer) {
@@ -63,7 +63,7 @@ namespace CSharpLua.LuaAst {
     public string ReturnKeyword => Keyword.Return;
   }
 
-  public sealed class LuaReturnStatementSyntax : LuaBaseReturnStatementSyntax {
+  public class LuaReturnStatementSyntax : LuaBaseReturnStatementSyntax {
     public readonly LuaSyntaxList<LuaExpressionSyntax> Expressions = new();
 
     public LuaReturnStatementSyntax() {
@@ -84,7 +84,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaBreakStatementSyntax : LuaStatementSyntax {
+  public class LuaBreakStatementSyntax : LuaStatementSyntax {
     public string BreakKeyword => Keyword.Break;
 
     private LuaBreakStatementSyntax() { }
@@ -96,7 +96,7 @@ namespace CSharpLua.LuaAst {
     public static readonly LuaBreakStatementSyntax Instance = new();
   }
 
-  public sealed class LuaContinueAdapterStatementSyntax : LuaStatementSyntax {
+  public class LuaContinueAdapterStatementSyntax : LuaStatementSyntax {
     public LuaExpressionStatementSyntax Assignment { get; }
     public LuaStatementSyntax Statement { get; }
 
@@ -114,7 +114,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaBlankLinesStatement : LuaStatementSyntax {
+  public class LuaBlankLinesStatement : LuaStatementSyntax {
     public int Count { get; }
 
     public LuaBlankLinesStatement(int count) {
@@ -131,7 +131,7 @@ namespace CSharpLua.LuaAst {
   public abstract class LuaCommentStatement : LuaStatementSyntax {
   }
 
-  public sealed class LuaShortCommentStatement : LuaCommentStatement {
+  public class LuaShortCommentStatement : LuaCommentStatement {
     public string SingleCommentToken => Tokens.ShortComment;
     public string Comment { get; }
 
@@ -157,12 +157,12 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaLongCommentStatement : LuaShortCommentExpressionStatement {
+  public class LuaLongCommentStatement : LuaShortCommentExpressionStatement {
     public LuaLongCommentStatement(string comment) : base(new LuaVerbatimStringLiteralExpressionSyntax(comment, false)) {
     }
   }
 
-  public sealed class LuaGotoStatement : LuaStatementSyntax {
+  public class LuaGotoStatement : LuaStatementSyntax {
     public LuaIdentifierNameSyntax Identifier { get; }
     public string GotoKeyword => Keyword.Goto;
 
@@ -175,7 +175,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaGotoCaseAdapterStatement : LuaStatementSyntax {
+  public class LuaGotoCaseAdapterStatement : LuaStatementSyntax {
     public LuaStatementSyntax Assignment { get; }
     public LuaGotoStatement GotoStatement { get; }
 
@@ -192,7 +192,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaLabeledStatement : LuaStatementSyntax {
+  public class LuaLabeledStatement : LuaStatementSyntax {
     public string PrefixToken => Tokens.Label;
     public string SuffixToken => Tokens.Label;
     public LuaIdentifierNameSyntax Identifier { get; }
@@ -208,7 +208,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaDocumentStatement : LuaStatementSyntax {
+  public class LuaDocumentStatement : LuaStatementSyntax {
     private const string kAttributePrefix = "@CSharpLua.";
 
     [Flags]
@@ -306,7 +306,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaSummaryDocumentStatement : LuaStatementSyntax {
+  public class LuaSummaryDocumentStatement : LuaStatementSyntax {
     public readonly List<string> Texts = new();
 
     internal override void Render(LuaRenderer renderer) {
@@ -314,7 +314,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaLineDocumentStatement : LuaStatementSyntax {
+  public class LuaLineDocumentStatement : LuaStatementSyntax {
     public string Text { get; }
 
     public LuaLineDocumentStatement(string text) {

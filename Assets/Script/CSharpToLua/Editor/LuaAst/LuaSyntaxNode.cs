@@ -24,7 +24,7 @@ namespace CSharpLua.LuaAst {
       throw new NotSupportedException($"{GetType().Name} is not override");
     }
 
-    public sealed class Semicolon {
+    public class Semicolon {
       public const string kSemicolon = ";";
 
       public override string ToString() {
@@ -158,7 +158,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaSyntaxList<T> : List<T> where T : LuaSyntaxNode {
+  public class LuaSyntaxList<T> : List<T> where T : LuaSyntaxNode {
     public new void Add(T node) {
       if (node == null) {
         throw new ArgumentNullException(nameof(node));

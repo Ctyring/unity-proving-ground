@@ -33,7 +33,7 @@ using CSharpLua.LuaAst;
 using UnityEngine;
 
 namespace CSharpLua {
-  internal sealed class PartialTypeDeclaration : IComparable<PartialTypeDeclaration> {
+  internal class PartialTypeDeclaration : IComparable<PartialTypeDeclaration> {
     public INamedTypeSymbol Symbol;
     public TypeDeclarationSyntax Node;
     public LuaTypeDeclarationSyntax TypeDeclaration;
@@ -54,8 +54,8 @@ namespace CSharpLua {
     }
   }
 
-  public sealed class LuaSyntaxGenerator {
-    public sealed class SettingInfo {
+  public class LuaSyntaxGenerator {
+    public class SettingInfo {
       public bool HasSemicolon { get; set; }
       private int indent_;
       public string IndentString { get; private set; }
@@ -1427,7 +1427,7 @@ namespace CSharpLua {
     private readonly ConcurrentDictionary<ISymbol, LuaSymbolNameSyntax> propertyOrEventInnerFieldNames_ = new(SymbolEqualityComparer.Default);
     private readonly ConcurrentHashSet<ISymbol> inlineSymbols_ = new(SymbolEqualityComparer.Default);
 
-    private sealed class PretreatmentChecker : CSharpSyntaxWalker {
+    private class PretreatmentChecker : CSharpSyntaxWalker {
       private readonly LuaSyntaxGenerator generator_;
       private readonly HashSet<INamedTypeSymbol> classTypes_ = new(SymbolEqualityComparer.Default);
 
@@ -1446,11 +1446,13 @@ namespace CSharpLua {
       }
 
       private void VisitBaseTypeDeclaration(BaseTypeDeclarationSyntax node, SyntaxList<MemberDeclarationSyntax> members) {
+        Debug.Log("[VisitBaseTypeDeclaration] name: " + node.Identifier.Text + ", type: " + node.GetType() + ", members: " + members.Count);
         var typeSymbol = GetDeclaredSymbol(node);
         classTypes_.Add(typeSymbol);
 
         var types = members.OfType<BaseTypeDeclarationSyntax>();
         foreach (var type in types) {
+          Debug.Log("[VisitBaseTypeDeclaration] type: " + type.GetType() + ", name: " + type.Identifier.Text);
           type.Accept(this);
         }
       }

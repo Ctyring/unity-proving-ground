@@ -5,24 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f5e77e-6fec-4ac9-bff8-a20e8c73f0aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestDelegateDeclaration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestDelegateDeclaration.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestClassDeclaration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestClassDeclaration.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity-proving-ground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity-proving-ground/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/Compiler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/Compiler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaBlockSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaBlockSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaCompilationUnitSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaCompilationUnitSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaExpressionSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaExpressionSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaFunctionExpressSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaFunctionExpressSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaIdentifierNameSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaIdentifierNameSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaIfStatementSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaIfStatementSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaInvocationExpressionSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaInvocationExpressionSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaLiteralExpressionSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaLiteralExpressionSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaLocalDeclarationStatementSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaLocalDeclarationStatementSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaLoopStatement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaLoopStatement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaMemberAccessExpressionSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaMemberAccessExpressionSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaStatementSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaStatementSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaSyntaxNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaSyntaxNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaTableExpression.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaTableExpression.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaTypeDeclarationSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaTypeDeclarationSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaWrapFunctionStatementSyntax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaAst/LuaWrapFunctionStatementSyntax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaRenderer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.Helper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.Object.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.Object.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.Query.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/Utils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/XmlMetaProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/XmlMetaProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/output/manifest.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/output/manifest.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/0a/0a8d776ac0bb9a5bed41db6e0c2d6529" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/4f/4f9fe9241cfd0065585b3d5a8bcf4f28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7c/7ceeaf70548473d477c2d977b67893cb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/7f/7fce7513d9c46d973ec974d79067ef5f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/90/9012172017d6f6e8bf33504df45805ca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9c/9c8b2e0dd51146c37829e53413e8a4da" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ae/ae87abe9302350a6a7d18e85b1ef0a62" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d0/d0693abbfd30c1005c3caf07f0468499" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/da/dafd95eced4e47dc840717d87561201f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/dc/dc0b1ff80e3cbc48f88830749ce94593" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/34/34fd81ad1f5d286b3eaf9303d6cae7ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/45/45bd99f00e30ea017cd1027129417cf9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/48/48018f1a59e0815fc8553e6f1f6d1466" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6a/6aa50312a74faf8f5710a99905954b6c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/6f/6ffbb65c4dc16d34c0e38da190544407" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/84/8441266e4b842882a0d1832b403e7f2d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/9e/9ea5a7a34b5c651506e4660fb3681ba0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/ac/acf1111a9282dd06796f7a015b18ab12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/b6/b63586cc2f117950ea5a36595875505c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d0/d0149e13072c9553a900269390674aad" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d4/d48206ca4ada93ad791b1b286bc841ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/dc/dc7396442ce7fe8cc4eb6831dea96211" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e5/e5a24f3048eca6fa233d373d639fad98" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f0/f04031094b5829a2ce049d34d6e0a3c1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/f3/f31c2df402123d5c10e5b4792d83be47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/fb/fb13a578fce2507f6bd187d295e5ce54" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" afterDir="false" />
@@ -46,8 +75,6 @@
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1-prev.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +92,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d96f5cea53c437bba7ad853988ca29d681c80/7b/6cb8cff0/CSharpSyntaxNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d96f5cea53c437bba7ad853988ca29d681c80/a2/f7a4b259/ArgumentSyntax.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d96f5cea53c437bba7ad853988ca29d681c80/ae/8bb23715/AttributeSyntax.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d96f5cea53c437bba7ad853988ca29d681c80/be/1fbed192/CSharpExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d96f5cea53c437bba7ad853988ca29d681c80/bf/6eb911a9/LocalDeclarationStatementSyntax.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73743ae7681f4b9ba6190f4a6642578617ab18/53/8d65224f/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@2.0.4/Editor/PlasticSCM/Views/CreateWorkspace/Dialogs/RepositoryExplorerDialog.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.21/Rider/Editor/EditorPluginInterop.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@3.0.21/Rider/Editor/ProjectGeneration/ProjectGeneration.cs" root0="SKIP_HIGHLIGHTING" />
@@ -199,7 +228,7 @@
       <workItem from="1690521444398" duration="6218000" />
       <workItem from="1690612630428" duration="6749000" />
       <workItem from="1690619504155" duration="2931000" />
-      <workItem from="1690626522165" duration="2918000" />
+      <workItem from="1690626522165" duration="5990000" />
     </task>
     <servers />
   </component>

@@ -17,7 +17,7 @@ limitations under the License.
 using System;
 
 namespace CSharpLua.LuaAst {
-  public sealed class LuaForInStatementSyntax : LuaStatementSyntax {
+  public class LuaForInStatementSyntax : LuaStatementSyntax {
     public LuaExpressionSyntax Expression { get; }
     public string ForKeyword => Keyword.For;
     public LuaIdentifierNameSyntax Identifier { get; }
@@ -44,7 +44,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaNumericalForStatementSyntax : LuaStatementSyntax {
+  public class LuaNumericalForStatementSyntax : LuaStatementSyntax {
     public string ForKeyword => Keyword.For;
     public LuaIdentifierNameSyntax Identifier { get; }
     public string EqualsToken => Tokens.Equals;
@@ -69,7 +69,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaWhileStatementSyntax : LuaStatementSyntax {
+  public class LuaWhileStatementSyntax : LuaStatementSyntax {
     public LuaExpressionSyntax Condition { get; }
     public string WhileKeyword => Keyword.While;
 
@@ -87,7 +87,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaRepeatStatementSyntax : LuaStatementSyntax {
+  public class LuaRepeatStatementSyntax : LuaStatementSyntax {
     public LuaExpressionSyntax Condition { get; }
     public string RepeatKeyword => Keyword.Repeat;
     public string UntilKeyword => Keyword.Until;

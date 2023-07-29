@@ -148,7 +148,7 @@ namespace CSharpLua.LuaAst {
     internal LuaStringLiteralExpressionSyntax ToStringLiteral() => new(this);
   }
 
-  public sealed class LuaPropertyOrEventIdentifierNameSyntax : LuaIdentifierNameSyntax {
+  public class LuaPropertyOrEventIdentifierNameSyntax : LuaIdentifierNameSyntax {
     public bool IsGetOrAdd { get; set; }
     public bool IsProperty { get; }
     public LuaIdentifierNameSyntax Name { get; }
@@ -181,7 +181,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaSymbolNameSyntax : LuaIdentifierNameSyntax {
+  public class LuaSymbolNameSyntax : LuaIdentifierNameSyntax {
     public LuaExpressionSyntax NameExpression { get; private set; }
 
     public LuaSymbolNameSyntax(LuaExpressionSyntax identifierName) : base("") {

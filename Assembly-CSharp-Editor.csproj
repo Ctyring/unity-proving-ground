@@ -70,6 +70,7 @@
      <Compile Include="Assets\Script\CSharpToLua\Editor\XmlDocumentationProvider.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaSyntaxNode.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestMethodDeclaration.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestClassDeclaration.cs" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\CoreSystem\Reflection" />
      <Folder Include="Assets\Script\CSharpToLua\Editor" />
      <Folder Include="Assets\NuGet\Editor" />

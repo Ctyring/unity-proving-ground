@@ -20,7 +20,7 @@ using System.Linq;
 using System.Reflection;
 
 namespace CSharpLua.LuaAst {
-  public sealed class GenericUsingDeclare : IComparable<GenericUsingDeclare> {
+  public class GenericUsingDeclare : IComparable<GenericUsingDeclare> {
     public LuaInvocationExpressionSyntax InvocationExpression;
     public string NewName;
     public List<string> ArgumentTypeNames;
@@ -44,7 +44,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class UsingDeclare : IComparable<UsingDeclare> {
+  public class UsingDeclare : IComparable<UsingDeclare> {
     public string Prefix;
     public string NewPrefix;
     public bool IsFromCode;
@@ -54,7 +54,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaCompilationUnitSyntax : LuaSyntaxNode {
+  public class LuaCompilationUnitSyntax : LuaSyntaxNode {
     public string FilePath { get; }
     public readonly LuaSyntaxList<LuaStatementSyntax> Statements = new();
     private readonly LuaStatementListSyntax importAreaStatements = new();

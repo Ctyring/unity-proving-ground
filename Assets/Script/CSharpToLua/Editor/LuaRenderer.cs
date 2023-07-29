@@ -21,7 +21,7 @@ using System.IO;
 using CSharpLua.LuaAst;
 
 namespace CSharpLua {
-  public sealed class LuaRenderer {
+  public class LuaRenderer {
     private readonly LuaSyntaxGenerator generator_;
     private readonly TextWriter writer_;
     private bool isNewLine_;

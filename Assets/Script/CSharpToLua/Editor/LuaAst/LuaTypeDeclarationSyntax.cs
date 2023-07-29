@@ -20,13 +20,13 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 
 namespace CSharpLua.LuaAst {
-  public sealed class LuaSpecialGenericType {
+  public class LuaSpecialGenericType {
     public LuaIdentifierNameSyntax Name;
     public LuaExpressionSyntax Value;
     public bool IsLazy;
   }
 
-  public sealed class LuaConstructorDeclaration {
+  public class LuaConstructorDeclaration {
     public LuaConstructorAdapterExpressionSyntax Function;
     public LuaDocumentStatement Document;
   }
@@ -678,25 +678,25 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaClassDeclarationSyntax : LuaTypeDeclarationSyntax {
+  public class LuaClassDeclarationSyntax : LuaTypeDeclarationSyntax {
     public LuaClassDeclarationSyntax(LuaIdentifierNameSyntax name) {
       UpdateIdentifiers(name, LuaIdentifierNameSyntax.Namespace, LuaIdentifierNameSyntax.Class, LuaIdentifierNameSyntax.Namespace);
     }
   }
 
-  public sealed class LuaStructDeclarationSyntax : LuaTypeDeclarationSyntax {
+  public class LuaStructDeclarationSyntax : LuaTypeDeclarationSyntax {
     public LuaStructDeclarationSyntax(LuaIdentifierNameSyntax name) {
       UpdateIdentifiers(name, LuaIdentifierNameSyntax.Namespace, LuaIdentifierNameSyntax.Struct, LuaIdentifierNameSyntax.Namespace);
     }
   }
 
-  public sealed class LuaInterfaceDeclarationSyntax : LuaTypeDeclarationSyntax {
+  public class LuaInterfaceDeclarationSyntax : LuaTypeDeclarationSyntax {
     public LuaInterfaceDeclarationSyntax(LuaIdentifierNameSyntax name) {
       UpdateIdentifiers(name, LuaIdentifierNameSyntax.Namespace, LuaIdentifierNameSyntax.Interface);
     }
   }
 
-  public sealed class LuaEnumDeclarationSyntax : LuaTypeDeclarationSyntax {
+  public class LuaEnumDeclarationSyntax : LuaTypeDeclarationSyntax {
     public string FullName { get; }
     public LuaCompilationUnitSyntax CompilationUnit { get; }
     public bool IsExport { get; set; }

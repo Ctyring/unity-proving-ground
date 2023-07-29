@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 
 namespace CSharpLua.LuaAst {
-  public sealed class LuaIfStatementSyntax : LuaStatementSyntax {
+  public class LuaIfStatementSyntax : LuaStatementSyntax {
     public string IfKeyword => Keyword.If;
     public LuaExpressionSyntax Condition { get; }
     public string OpenParenToken => Keyword.Then;
@@ -37,7 +37,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaElseIfStatementSyntax : LuaStatementSyntax {
+  public class LuaElseIfStatementSyntax : LuaStatementSyntax {
     public string ElseIfKeyword => Keyword.ElseIf;
     public LuaExpressionSyntax Condition { get; }
     public string OpenParenToken => Keyword.Then;
@@ -52,7 +52,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaElseClauseSyntax : LuaSyntaxNode {
+  public class LuaElseClauseSyntax : LuaSyntaxNode {
     public string ElseKeyword => Keyword.Else;
     public readonly LuaBlockSyntax Body = new();
 
@@ -61,7 +61,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaSwitchAdapterStatementSyntax : LuaStatementSyntax {
+  public class LuaSwitchAdapterStatementSyntax : LuaStatementSyntax {
     public readonly LuaRepeatStatementSyntax RepeatStatement = new(LuaIdentifierNameSyntax.One);
     public LuaIdentifierNameSyntax Temp { get; }
     private LuaBlockSyntax defaultBlock_;

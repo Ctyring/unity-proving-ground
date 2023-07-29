@@ -53,7 +53,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaBlockStatementSyntax : LuaBlockSyntax {
+  public class LuaBlockStatementSyntax : LuaBlockSyntax {
     public LuaBlockStatementSyntax() {
       OpenToken = Keyword.Do;
       CloseToken = Keyword.End;

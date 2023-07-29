@@ -18,7 +18,7 @@ using System;
 using System.Collections.Generic;
 
 namespace CSharpLua.LuaAst {
-  public sealed class LuaArgumentListSyntax : LuaSyntaxNode {
+  public class LuaArgumentListSyntax : LuaSyntaxNode {
     public string OpenParenToken => Tokens.OpenParentheses;
     public string CloseParenToken => Tokens.CloseParentheses;
     public readonly LuaSyntaxList<LuaExpressionSyntax> Arguments = new();
@@ -39,7 +39,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaInvocationExpressionSyntax : LuaExpressionSyntax {
+  public class LuaInvocationExpressionSyntax : LuaExpressionSyntax {
     public readonly LuaArgumentListSyntax ArgumentList = new();
     public LuaExpressionSyntax Expression { get; }
     public List<LuaExpressionSyntax> Arguments => ArgumentList.Arguments;

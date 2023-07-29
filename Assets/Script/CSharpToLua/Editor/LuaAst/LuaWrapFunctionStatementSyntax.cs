@@ -56,7 +56,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaNamespaceDeclarationSyntax : LuaWrapFunctionStatementSyntax {
+  public class LuaNamespaceDeclarationSyntax : LuaWrapFunctionStatementSyntax {
     public LuaNamespaceDeclarationSyntax(LuaIdentifierNameSyntax name, bool isContained = false) {
       UpdateIdentifiers(name, isContained ? LuaIdentifierNameSyntax.Namespace : LuaIdentifierNameSyntax.System, LuaIdentifierNameSyntax.Namespace, LuaIdentifierNameSyntax.Namespace);
     }

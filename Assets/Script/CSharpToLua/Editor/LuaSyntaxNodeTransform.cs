@@ -26,10 +26,10 @@ using CSharpLua.LuaAst;
 using UnityEngine;
 
 namespace CSharpLua {
-    public sealed partial class LuaSyntaxNodeTransform : CSharpSyntaxVisitor<LuaSyntaxNode> {
+    public partial class LuaSyntaxNodeTransform : CSharpSyntaxVisitor<LuaSyntaxNode> {
         public const int kStringConstInlineCount = 27;
 
-        private sealed class MethodInfo {
+        private class MethodInfo {
             public IMethodSymbol Symbol { get; }
             public IList<LuaExpressionSyntax> RefOrOutParameters { get; }
             public List<LuaIdentifierNameSyntax> InliningReturnVars { get; set; }
@@ -48,7 +48,7 @@ namespace CSharpLua {
             }
         }
 
-        internal sealed class TypeDeclarationInfo {
+        internal class TypeDeclarationInfo {
             public INamedTypeSymbol TypeSymbol { get; }
             public LuaTypeDeclarationSyntax TypeDeclaration { get; }
 
@@ -690,7 +690,7 @@ namespace CSharpLua {
             }
         }
 
-        private sealed class MethodDeclarationResult {
+        private class MethodDeclarationResult {
             // 方法符号
             public IMethodSymbol Symbol;
             // 方法表达式
@@ -1104,7 +1104,7 @@ namespace CSharpLua {
                 statements, isMoreThanLocalVariables, isMoreThanUpValueStaticInit);
         }
 
-        private sealed class PropertyMethodResult {
+        private class PropertyMethodResult {
             public LuaPropertyOrEventIdentifierNameSyntax Name { get; }
             public List<LuaExpressionSyntax> Attributes { get; }
 
@@ -1440,7 +1440,7 @@ namespace CSharpLua {
             return identifier;
         }
 
-        private sealed class BlockCommonNode : IComparable<BlockCommonNode> {
+        private class BlockCommonNode : IComparable<BlockCommonNode> {
             public SyntaxTrivia SyntaxTrivia { get; }
             public CSharpSyntaxNode SyntaxNode { get; }
             public FileLinePositionSpan LineSpan { get; }
@@ -1578,6 +1578,13 @@ namespace CSharpLua {
             }
         }
 
+        /// <summary>
+        /// 遍历注释和节点
+        /// </summary>
+        /// <param name="rootNode"></param>
+        /// <param name="nodes"></param>
+        /// <param name="isCheckBlank"></param>
+        /// <returns></returns>
         private IEnumerable<LuaStatementSyntax> VisitTriviaAndNode(SyntaxNode rootNode,
             IEnumerable<CSharpSyntaxNode> nodes, bool isCheckBlank = true) {
             var syntaxTrivias = rootNode.DescendantTrivia().Where(i => i.IsExportSyntaxTrivia(rootNode));
@@ -1605,7 +1612,7 @@ namespace CSharpLua {
                         yield return black;
                     }
                 }
-
+                // 处理每个节点
                 yield return (LuaStatementSyntax)common.Visit(this);
             }
         }
@@ -2353,7 +2360,7 @@ namespace CSharpLua {
             return assignment;
         }
 
-        private sealed class RefOrOutArgument {
+        private class RefOrOutArgument {
             public LuaExpressionSyntax Expression { get; }
             public bool IsDeclaration { get; }
             public bool IsSpecial { get; }
@@ -3303,7 +3310,7 @@ namespace CSharpLua {
             };
         }
 
-        private sealed class GenericPlaceholder {
+        private class GenericPlaceholder {
             public ITypeSymbol Symbol { get; }
             private readonly int index_;
             public int TypeParameterIndex => index_ + 1;
@@ -3347,7 +3354,7 @@ namespace CSharpLua {
             }
         }
 
-        private sealed class TypeParameterPlaceholder {
+        private class TypeParameterPlaceholder {
             public ITypeSymbol Symbol;
             public int ParameterIndex;
         }

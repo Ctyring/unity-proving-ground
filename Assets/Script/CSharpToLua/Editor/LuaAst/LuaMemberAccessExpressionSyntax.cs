@@ -18,7 +18,7 @@ using System;
 using System.Diagnostics.Contracts;
 
 namespace CSharpLua.LuaAst {
-  public sealed class LuaMemberAccessExpressionSyntax : LuaExpressionSyntax {
+  public class LuaMemberAccessExpressionSyntax : LuaExpressionSyntax {
     public LuaExpressionSyntax Expression { get; private set; }
     public LuaExpressionSyntax Name { get; }
     public string OperatorToken { get; }
@@ -44,7 +44,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaPropertyAdapterExpressionSyntax : LuaExpressionSyntax {
+  public class LuaPropertyAdapterExpressionSyntax : LuaExpressionSyntax {
     public LuaExpressionSyntax Expression { get; private set; }
     public string OperatorToken { get; private set; }
     public LuaPropertyOrEventIdentifierNameSyntax Name { get; }

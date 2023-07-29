@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace CSharpLua.LuaAst {
-  public sealed class LuaTableExpression : LuaExpressionSyntax {
+  public class LuaTableExpression : LuaExpressionSyntax {
     public string OpenBraceToken => Tokens.OpenBrace;
     public readonly LuaSyntaxList<LuaTableItemSyntax> Items = new();
     public string CloseBraceToken => Tokens.CloseBrace;
@@ -59,7 +59,7 @@ namespace CSharpLua.LuaAst {
   public abstract class LuaTableItemSyntax : LuaSyntaxNode {
   }
 
-  public sealed class LuaSingleTableItemSyntax : LuaTableItemSyntax {
+  public class LuaSingleTableItemSyntax : LuaTableItemSyntax {
     public LuaExpressionSyntax Expression { get; }
 
     public LuaSingleTableItemSyntax(LuaExpressionSyntax expression) {
@@ -74,7 +74,7 @@ namespace CSharpLua.LuaAst {
   public abstract class LuaTableKeySyntax : LuaSyntaxNode {
   }
 
-  public sealed class LuaTableExpressionKeySyntax : LuaTableKeySyntax {
+  public class LuaTableExpressionKeySyntax : LuaTableKeySyntax {
     public LuaExpressionSyntax Expression { get; }
     public string OpenBracketToken => Tokens.OpenBracket;
     public string CloseBracketToken => Tokens.CloseBracket;
@@ -88,7 +88,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaTableLiteralKeySyntax : LuaTableKeySyntax {
+  public class LuaTableLiteralKeySyntax : LuaTableKeySyntax {
     public LuaIdentifierNameSyntax Identifier { get; }
 
     public LuaTableLiteralKeySyntax(LuaIdentifierNameSyntax identifier) {
@@ -100,7 +100,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaKeyValueTableItemSyntax : LuaTableItemSyntax {
+  public class LuaKeyValueTableItemSyntax : LuaTableItemSyntax {
     public LuaTableKeySyntax Key { get; }
     public string OperatorToken => Tokens.Equals;
     public LuaExpressionSyntax Value { get; }
@@ -118,7 +118,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaTableIndexAccessExpressionSyntax : LuaExpressionSyntax {
+  public class LuaTableIndexAccessExpressionSyntax : LuaExpressionSyntax {
     public LuaExpressionSyntax Expression { get; }
     public LuaExpressionSyntax Index { get; }
     public string OpenBracketToken => Tokens.OpenBracket;

@@ -17,7 +17,7 @@ limitations under the License.
 using System.Collections.Generic;
 
 namespace CSharpLua.LuaAst {
-  public sealed class LuaParameterListSyntax : LuaSyntaxNode {
+  public class LuaParameterListSyntax : LuaSyntaxNode {
     public string OpenParenToken => Tokens.OpenParentheses;
     public string CloseParenToken => Tokens.CloseParentheses;
     public readonly LuaSyntaxList<LuaIdentifierNameSyntax> Parameters = new();
@@ -59,7 +59,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaConstructorAdapterExpressionSyntax : LuaFunctionExpressionSyntax {
+  public class LuaConstructorAdapterExpressionSyntax : LuaFunctionExpressionSyntax {
     public bool IsInvokeThisCtor { get; set; }
     public bool IsStatic { get; set; }
   }
@@ -70,10 +70,10 @@ namespace CSharpLua.LuaAst {
     public bool HasContinue { get; set; }
   }
 
-  public sealed class LuaTryAdapterExpressionSyntax : LuaCheckLoopControlExpressionSyntax {
+  public class LuaTryAdapterExpressionSyntax : LuaCheckLoopControlExpressionSyntax {
     public LuaIdentifierNameSyntax CatchTemp { get; set; }
   }
 
-  public sealed class LuaUsingAdapterExpressionSyntax : LuaCheckLoopControlExpressionSyntax {
+  public class LuaUsingAdapterExpressionSyntax : LuaCheckLoopControlExpressionSyntax {
   }
 }

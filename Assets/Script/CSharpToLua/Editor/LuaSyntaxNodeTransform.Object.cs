@@ -25,7 +25,7 @@ using Microsoft.CodeAnalysis;
 using CSharpLua.LuaAst;
 
 namespace CSharpLua {
-  public sealed partial class LuaSyntaxNodeTransform {
+  public partial class LuaSyntaxNodeTransform {
     private readonly Stack<LuaIdentifierNameSyntax> conditionalTemps_ = new();
 
     private LuaExpressionSyntax GetObjectCreationExpression(IMethodSymbol symbol, BaseObjectCreationExpressionSyntax node) {

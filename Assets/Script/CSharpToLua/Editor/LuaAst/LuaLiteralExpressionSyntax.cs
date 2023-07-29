@@ -22,7 +22,7 @@ namespace CSharpLua.LuaAst {
     public abstract string Text { get; }
   }
 
-  public sealed class LuaIdentifierLiteralExpressionSyntax : LuaLiteralExpressionSyntax {
+  public class LuaIdentifierLiteralExpressionSyntax : LuaLiteralExpressionSyntax {
     public LuaIdentifierNameSyntax Identifier { get; }
 
     public LuaIdentifierLiteralExpressionSyntax(string text) : this((LuaIdentifierNameSyntax)text) {
@@ -47,7 +47,7 @@ namespace CSharpLua.LuaAst {
     public static readonly LuaIdentifierLiteralExpressionSyntax False = new(LuaIdentifierNameSyntax.False);
   }
 
-  public sealed class LuaStringLiteralExpressionSyntax : LuaLiteralExpressionSyntax {
+  public class LuaStringLiteralExpressionSyntax : LuaLiteralExpressionSyntax {
     public string OpenParenToken => Tokens.Quote;
     public LuaIdentifierNameSyntax Identifier { get; }
     public string CloseParenToken => Tokens.Quote;
@@ -69,7 +69,7 @@ namespace CSharpLua.LuaAst {
     public static readonly LuaStringLiteralExpressionSyntax Empty = new(LuaIdentifierNameSyntax.Empty);
   }
 
-  public sealed class LuaVerbatimStringLiteralExpressionSyntax : LuaLiteralExpressionSyntax {
+  public class LuaVerbatimStringLiteralExpressionSyntax : LuaLiteralExpressionSyntax {
     public override string Text { get; }
     public int EqualsCount { get; }
     public string OpenBracket => Tokens.OpenBracket;
@@ -141,7 +141,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaCharacterLiteralExpression : LuaConstLiteralExpression {
+  public class LuaCharacterLiteralExpression : LuaConstLiteralExpression {
     public LuaCharacterLiteralExpression(char character) : base(((int)character).ToString(), GetIdentifierToken(character)) {
     }
 
@@ -168,7 +168,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaFloatLiteralExpressionSyntax : LuaNumberLiteralExpressionSyntax {
+  public class LuaFloatLiteralExpressionSyntax : LuaNumberLiteralExpressionSyntax {
     private readonly float number_;
 
     public LuaFloatLiteralExpressionSyntax(float number) {
@@ -188,7 +188,7 @@ namespace CSharpLua.LuaAst {
     }
   }
 
-  public sealed class LuaDoubleLiteralExpressionSyntax : LuaNumberLiteralExpressionSyntax {
+  public class LuaDoubleLiteralExpressionSyntax : LuaNumberLiteralExpressionSyntax {
     public override double Number { get;}
 
     public LuaDoubleLiteralExpressionSyntax(double number) {

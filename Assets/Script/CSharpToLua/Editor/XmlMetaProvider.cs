@@ -23,10 +23,10 @@ using System.Xml.Serialization;
 using Microsoft.CodeAnalysis;
 
 namespace CSharpLua {
-  public sealed class XmlMetaProvider {
+  public class XmlMetaProvider {
     [XmlRoot("meta")]
-    public sealed class XmlMetaModel {
-      public sealed class TemplateModel {
+    public class XmlMetaModel {
+      public class TemplateModel {
         [XmlAttribute]
         public string Template;
       }
@@ -84,7 +84,7 @@ namespace CSharpLua {
         }
       }
 
-      public sealed class PropertyModel : MemberModel {
+      public class PropertyModel : MemberModel {
         [XmlAttribute]
         public string Name;
         [XmlElement]
@@ -104,21 +104,21 @@ namespace CSharpLua {
         }
       }
 
-      public sealed class FieldModel : MemberModel {
+      public class FieldModel : MemberModel {
         [XmlAttribute]
         public string Template;
         [XmlAttribute]
         public bool IsProperty;
       }
 
-      public sealed class ArgumentModel {
+      public class ArgumentModel {
         [XmlAttribute]
         public string type;
         [XmlElement("arg")]
         public ArgumentModel[] GenericArgs;
       }
 
-      public sealed class MethodModel : MemberModel {
+      public class MethodModel : MemberModel {
         [XmlAttribute]
         public string Name;
         [XmlAttribute]
@@ -152,7 +152,7 @@ namespace CSharpLua {
         }
       }
 
-      public sealed class ClassModel : MemberModel {
+      public class ClassModel : MemberModel {
         [XmlAttribute]
         public string Name;
         [XmlElement("property")]
@@ -167,14 +167,14 @@ namespace CSharpLua {
         public bool Readonly;
       }
 
-      public sealed class NamespaceModel : MemberModel {
+      public class NamespaceModel : MemberModel {
         [XmlAttribute]
         public string Name;
         [XmlElement("class")]
         public ClassModel[] Classes;
       }
 
-      public sealed class AssemblyModel {
+      public class AssemblyModel {
         [XmlElement("namespace")]
         public NamespaceModel[] Namespaces;
         [XmlElement("class")]
@@ -191,7 +191,7 @@ namespace CSharpLua {
       IgnoreGeneric,
     }
 
-    private sealed class MethodMetaInfo {
+    private class MethodMetaInfo {
       private readonly List<XmlMetaModel.MethodModel> models_ = new();
       private bool isSingleModel_;
 
@@ -327,7 +327,7 @@ namespace CSharpLua {
       }
     }
 
-    private sealed class TypeMetaInfo {
+    private class TypeMetaInfo {
       private readonly XmlMetaModel.ClassModel model_;
       private readonly Dictionary<string, XmlMetaModel.FieldModel> fields_ = new();
       private readonly Dictionary<string, XmlMetaModel.PropertyModel> properties_ = new();
