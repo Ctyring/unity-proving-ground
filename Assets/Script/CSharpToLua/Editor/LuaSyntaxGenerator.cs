@@ -1481,6 +1481,7 @@ namespace CSharpLua {
       }
 
       private void Check() {
+        Debug.Log("Check()");
         foreach (var type in classTypes_) {
           generator_.AddTypeSymbol(type);
           CheckImplicitInterfaceImplementation(type);

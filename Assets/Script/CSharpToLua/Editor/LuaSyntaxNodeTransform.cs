@@ -584,7 +584,9 @@ namespace CSharpLua {
             name = generator_.GetTypeDeclarationName(typeSymbol);
         }
 
-        public override LuaSyntaxNode VisitClassDeclaration(ClassDeclarationSyntax node) {
+        public override LuaSyntaxNode VisitClassDeclaration(ClassDeclarationSyntax node)
+        {
+            Debug.Log("[VisitClassDeclaration] class name: " + node);
             GetTypeDeclarationName(node, out var name, out var typeSymbol);
             LuaClassDeclarationSyntax classDeclaration = new LuaClassDeclarationSyntax(name);
             VisitTypeDeclaration(typeSymbol, node, classDeclaration);

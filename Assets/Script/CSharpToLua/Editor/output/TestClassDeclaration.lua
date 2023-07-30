@@ -2,23 +2,10 @@
 local System = System
 System.namespace("Script.CSharpToLua.Editor.input", function (namespace)
   namespace.class("TestClassDeclaration", function (namespace)
-    namespace.class("Father", function (namespace)
-      namespace.class("Son", function (namespace)
-        namespace.class("SonSon", function (namespace)
-          return {
-            sonsonnumber1 = 4
-          }
-        end)
-        return {
-          sonnumber1 = 3
-        }
-      end)
-      namespace.class("Son2", function (namespace)
+    namespace.class("A", function (namespace)
+      namespace.class("B", function (namespace)
         return {}
       end)
-      return {}
-    end)
-    namespace.class("Father2", function (namespace)
       return {}
     end)
     return {}
