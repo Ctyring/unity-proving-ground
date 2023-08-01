@@ -1037,14 +1037,20 @@ namespace CSharpLua {
     internal void ImportGenericTypeName(ref LuaExpressionSyntax luaExpression, ITypeSymbol symbol) {
       if (!IsNoImportTypeName && !CurTypeSymbol.EQ(symbol) && !IsCurMethodTypeArgument(symbol)) {
         var invocationExpression = (LuaInvocationExpressionSyntax)luaExpression;
+        // Debug.Log("[ImportGenericTypeName] symbol: " + symbol.ToDisplayString());
         string newName = GetGenericTypeImportName(invocationExpression, out var argumentTypeNames);
+        // Debug.Log("[ImportGenericTypeName] newName: " + newName);
         if (!IsLocalVarExistsInCurMethod(newName)) {
+          // Debug.Log("[ImportGenericTypeName] !IsLocalVarExistsInCurMethod");
           bool success;
           if (!symbol.IsTypeParameterExists()) {
+            // Debug.Log("[ImportGenericTypeName] !symbol.IsTypeParameterExists()");
             success = AddGenericImport(invocationExpression, newName, argumentTypeNames, symbol.IsAbsoluteFromCode());
           } else {
+            // Debug.Log("[ImportGenericTypeName] symbol.IsTypeParameterExists()");
             success = CurTypeDeclaration.TypeDeclaration.AddGenericImport(invocationExpression, newName, argumentTypeNames, symbol.IsAbsoluteFromCode(), out var declare);
             if (declare != null) {
+              // Debug.Log("[ImportGenericTypeName] declare != null TypeSymbol: " + CurTypeDeclaration.TypeSymbol.ToDisplayString() + "  OriginalDefinition: " + symbol.OriginalDefinition.ToDisplayString());
               bool hasAdd = generator_.AddGenericImportDepend(CurTypeDeclaration.TypeSymbol, symbol.OriginalDefinition as INamedTypeSymbol);
               if (hasAdd && CurCompilationUnit.IsUsingDeclareConflict(invocationExpression)) {
                 declare.IsFromGlobal = true;
@@ -1399,7 +1405,7 @@ namespace CSharpLua {
       }
     }
 
-    private void BuildTypeParameters(INamedTypeSymbol typeSymbol, TypeDeclarationSyntax node, LuaTypeDeclarationSyntax typeDeclaration) {
+    private void ProcessTypeParameters(INamedTypeSymbol typeSymbol, TypeDeclarationSyntax node, LuaTypeDeclarationSyntax typeDeclaration) {
       var typeParameters = new List<LuaIdentifierNameSyntax>();
       FillExternalTypeParameters(typeParameters, typeSymbol);
       if (node.TypeParameterList != null) {

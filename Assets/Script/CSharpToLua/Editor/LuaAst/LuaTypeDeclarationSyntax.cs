@@ -18,6 +18,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
+using UnityEngine;
 
 namespace CSharpLua.LuaAst {
   public class LuaSpecialGenericType {
@@ -49,7 +50,7 @@ namespace CSharpLua.LuaAst {
     private readonly List<LuaStatementSyntax> initStatements_ = new();
     private readonly List<LuaConstructorDeclaration> ctors_ = new();
 
-    private readonly List<LuaIdentifierNameSyntax> typeParameters_ = new();
+    private readonly List<LuaIdentifierNameSyntax> typeParameters_ = new(); // 泛型
     private readonly List<GenericUsingDeclare> genericUsingDeclares_ = new();
     private readonly LuaDocumentStatement document_ = new();
     private LuaTableExpression interfaceDefaultMethods_;
@@ -128,6 +129,7 @@ namespace CSharpLua.LuaAst {
         NewName = name,
         IsFromCode = isFromCode
       };
+      Debug.Log("[AddGenericImport] name: " + name);
       genericUsingDeclares_.Add(genericUsingDeclare);
       return true;
     }

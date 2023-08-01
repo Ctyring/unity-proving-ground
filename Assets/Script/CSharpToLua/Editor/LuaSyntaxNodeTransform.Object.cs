@@ -23,6 +23,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis;
 using CSharpLua.LuaAst;
+using UnityEngine;
 
 namespace CSharpLua {
   public partial class LuaSyntaxNodeTransform {
@@ -213,6 +214,7 @@ namespace CSharpLua {
     }
 
     public override LuaSyntaxNode VisitGenericName(GenericNameSyntax node) {
+      Debug.Log("[VisitGenericName]:" + node);
       ISymbol symbol = semanticModel_.GetSymbolInfo(node).Symbol;
       Contract.Assert(symbol != null);
       if (symbol.Kind == SymbolKind.Method) {

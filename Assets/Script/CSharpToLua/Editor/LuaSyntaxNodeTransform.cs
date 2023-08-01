@@ -275,9 +275,15 @@ namespace CSharpLua {
             return namespaceDeclaration;
         }
 
-        private void BuildTypeMembers(LuaTypeDeclarationSyntax typeDeclaration, TypeDeclarationSyntax node) {
+        /// <summary>
+        /// 递归处理类型成员，优先处理类型声明成员
+        /// </summary>
+        /// <param name="typeDeclaration"></param>
+        /// <param name="node"></param>
+        private void ProcessTypeMembers(LuaTypeDeclarationSyntax typeDeclaration, TypeDeclarationSyntax node) {
             foreach (var nestedTypeDeclaration in node.Members.Where(i => i.Kind().IsTypeDeclaration())) {
                 var luaNestedTypeDeclaration = nestedTypeDeclaration.Accept<LuaTypeDeclarationSyntax>(this);
+                // 添加到嵌套声明列表
                 typeDeclaration.AddNestedTypeDeclaration(luaNestedTypeDeclaration);
             }
 
@@ -286,12 +292,19 @@ namespace CSharpLua {
             }
         }
 
+        /// <summary>
+        /// 判断基类是否是泛型
+        /// </summary>
+        /// <param name="hasExtendSelf"></param>
+        /// <param name="typeSymbol"></param>
+        /// <param name="baseType"></param>
         private void CheckBaseTypeGenericKind(ref bool hasExtendSelf, INamedTypeSymbol typeSymbol,
             BaseTypeSyntax baseType) {
             if (!hasExtendSelf) {
                 if (baseType.IsKind(SyntaxKind.SimpleBaseType)) {
                     var baseNode = (SimpleBaseTypeSyntax)baseType;
                     if (baseNode.Type.IsKind(SyntaxKind.GenericName)) {
+                        // Debug.Log("[CheckBaseTypeGenericKind] baseType is GenericNameSyntax" + baseNode);
                         var baseGenericNameNode = (GenericNameSyntax)baseNode.Type;
                         var baseTypeSymbol = (INamedTypeSymbol)semanticModel_.GetTypeInfo(baseGenericNameNode).Type;
                         hasExtendSelf = Utility.IsExtendSelf(typeSymbol, baseTypeSymbol);
@@ -354,7 +367,14 @@ namespace CSharpLua {
             return false;
         }
 
-        private void BuildBaseTypes(INamedTypeSymbol typeSymbol, LuaTypeDeclarationSyntax typeDeclaration,
+        /// <summary>
+        /// 构建类型的基类
+        /// </summary>
+        /// <param name="typeSymbol"></param>
+        /// <param name="typeDeclaration"></param>
+        /// <param name="types"></param>
+        /// <param name="isPartial"></param>
+        private void ProcessBaseTypes(INamedTypeSymbol typeSymbol, LuaTypeDeclarationSyntax typeDeclaration,
             IEnumerable<BaseTypeSyntax> types, bool isPartial) {
             bool hasExtendSelf = false;
             var baseTypes = new List<LuaExpressionSyntax>();
@@ -385,21 +405,29 @@ namespace CSharpLua {
             }
         }
 
+        /// <summary>
+        /// 处理类型声明
+        /// </summary>
+        /// <param name="typeSymbol"></param>
+        /// <param name="node"></param>
+        /// <param name="typeDeclaration"></param>
         private void BuildTypeDeclaration(INamedTypeSymbol typeSymbol, TypeDeclarationSyntax node,
             LuaTypeDeclarationSyntax typeDeclaration) {
             typeDeclarations_.Push(new TypeDeclarationInfo(typeSymbol, typeDeclaration));
-
+            // Debug.Log("[BuildTypeDeclaration] " + typeSymbol + " " + node.Identifier.ValueText);
             var comments = GetDocumentationComment(node);
             typeDeclaration.AddDocument(comments);
 
             var attributes = BuildAttributes(node.AttributeLists);
-            BuildTypeParameters(typeSymbol, node, typeDeclaration);
+            // 处理泛型
+            ProcessTypeParameters(typeSymbol, node, typeDeclaration);
             if (node.BaseList != null) {
-                BuildBaseTypes(typeSymbol, typeDeclaration, node.BaseList.Types, false);
+                // 处理父类
+                ProcessBaseTypes(typeSymbol, typeDeclaration, node.BaseList.Types, false);
             }
 
             CheckRecordParameterCtor(typeSymbol, node, typeDeclaration);
-            BuildTypeMembers(typeDeclaration, node);
+            ProcessTypeMembers(typeDeclaration, node);
             CheckTypeDeclaration(typeSymbol, typeDeclaration, attributes);
 
             typeDeclarations_.Pop();
@@ -537,7 +565,7 @@ namespace CSharpLua {
                 attributes.AddRange(expressions);
             }
 
-            BuildTypeParameters(major.Symbol, major.Node, major.TypeDeclaration);
+            ProcessTypeParameters(major.Symbol, major.Node, major.TypeDeclaration);
             var baseTypes = new List<BaseTypeSyntax>();
             var baseSymbols = new HashSet<ITypeSymbol>(SymbolEqualityComparer.Default);
             foreach (var typeDeclaration in typeDeclarations) {
@@ -562,12 +590,12 @@ namespace CSharpLua {
                     }
                 }
 
-                BuildBaseTypes(major.Symbol, major.TypeDeclaration, baseTypes, true);
+                ProcessBaseTypes(major.Symbol, major.TypeDeclaration, baseTypes, true);
             }
 
             foreach (var typeDeclaration in typeDeclarations) {
                 semanticModel_ = generator_.GetSemanticModel(typeDeclaration.Node.SyntaxTree);
-                BuildTypeMembers(major.TypeDeclaration, typeDeclaration.Node);
+                ProcessTypeMembers(major.TypeDeclaration, typeDeclaration.Node);
             }
 
             CheckTypeDeclaration(major.Symbol, major.TypeDeclaration, attributes);
@@ -588,6 +616,7 @@ namespace CSharpLua {
         {
             Debug.Log("[VisitClassDeclaration] class name: " + node);
             GetTypeDeclarationName(node, out var name, out var typeSymbol);
+            Debug.Log("[VisitClassDeclaration] type name: " + name.ValueText);
             LuaClassDeclarationSyntax classDeclaration = new LuaClassDeclarationSyntax(name);
             VisitTypeDeclaration(typeSymbol, node, classDeclaration);
             return classDeclaration;
@@ -1054,6 +1083,7 @@ namespace CSharpLua {
         }
 
         public override LuaSyntaxNode VisitFieldDeclaration(FieldDeclarationSyntax node) {
+            Debug.Log("[VisitFieldDeclaration] node: " + node);
             VisitBaseFieldDeclarationSyntax(node);
             return base.VisitFieldDeclaration(node);
         }

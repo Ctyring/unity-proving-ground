@@ -1446,13 +1446,13 @@ namespace CSharpLua {
       }
 
       private void VisitBaseTypeDeclaration(BaseTypeDeclarationSyntax node, SyntaxList<MemberDeclarationSyntax> members) {
-        Debug.Log("[VisitBaseTypeDeclaration] name: " + node.Identifier.Text + ", type: " + node.GetType() + ", members: " + members.Count);
+        // Debug.Log("[VisitBaseTypeDeclaration] name: " + node.Identifier.Text + ", type: " + node.GetType() + ", members: " + members.Count);
         var typeSymbol = GetDeclaredSymbol(node);
         classTypes_.Add(typeSymbol);
 
         var types = members.OfType<BaseTypeDeclarationSyntax>();
         foreach (var type in types) {
-          Debug.Log("[VisitBaseTypeDeclaration] type: " + type.GetType() + ", name: " + type.Identifier.Text);
+          // Debug.Log("[VisitBaseTypeDeclaration] type: " + type.GetType() + ", name: " + type.Identifier.Text);
           type.Accept(this);
         }
       }
@@ -1948,10 +1948,16 @@ namespace CSharpLua {
       return typeRefactorNames_.GetOrDefault(symbol);
     }
 
+    /// <summary>
+    /// 获取类型声明名
+    /// </summary>
+    /// <param name="typeSymbol"></param>
+    /// <returns></returns>
     internal LuaIdentifierNameSyntax GetTypeDeclarationName(INamedTypeSymbol typeSymbol) {
       string name = GetTypeRefactorName(typeSymbol);
       if (name == null) {
         name = typeSymbol.Name;
+        // 获取类型中泛型的个数
         int typeParametersCount = typeSymbol.TypeParameters.Length;
         if (typeParametersCount > 0) {
           name += "_" + typeParametersCount;
@@ -1970,7 +1976,7 @@ namespace CSharpLua {
       switch (symbol.Kind) {
         // 泛型 返回 T
         case SymbolKind.TypeParameter: {
-          // Debug.Log("[GetTypeName] type parameter: " + symbol);
+          Debug.Log("[GetTypeName] type parameter: " + symbol.Name);
           return symbol.Name;
         }
         case SymbolKind.ArrayType: {
