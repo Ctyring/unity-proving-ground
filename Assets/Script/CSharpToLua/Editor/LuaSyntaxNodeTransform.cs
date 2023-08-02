@@ -1204,6 +1204,7 @@ namespace CSharpLua {
         }
 
         public override LuaSyntaxNode VisitPropertyDeclaration(PropertyDeclarationSyntax node) {
+            Debug.Log("[VisitPropertyDeclaration] node: " + node);
             var symbol = semanticModel_.GetDeclaredSymbol(node);
             if (!symbol.IsAbstract) {
                 bool isStatic = symbol.IsStatic;

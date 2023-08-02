@@ -3,6 +3,7 @@ return function (path)
   return System.init({
     path = path,
     files = {
+      "TestAmonymousObject",
       "TestClassDeclaration",
       "TestDelegateDeclaration",
       "TestGenericClass",
@@ -15,6 +16,7 @@ return function (path)
       "Script.CSharpToLua.Editor.input.MyClass",
       "Script.CSharpToLua.Editor.input.Person",
       "Script.CSharpToLua.Editor.input.Program",
+      "Script.CSharpToLua.Editor.input.TestAmonymousObject",
       "Script.CSharpToLua.Editor.input.TestClassDeclaration.A.B",
       "Script.CSharpToLua.Editor.input.TestGenericClass.Test",
       "Script.CSharpToLua.Editor.input.TestGenericClass.Test_2"

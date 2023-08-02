@@ -176,12 +176,23 @@ namespace CSharpLua {
       return new LuaKeyValueTableItemSyntax(name, expression);
     }
 
+    /// <summary>
+    /// 处理匿名对象创建
+    /// </summary>
+    /// <param name="node"></param>
+    /// <returns></returns>
     public override LuaSyntaxNode VisitAnonymousObjectCreationExpression(AnonymousObjectCreationExpressionSyntax node) {
+      // Debug.Log("[VisitAnonymousObjectCreationExpression] Node:" + node);
+      // 构建一个lua表
       var table = new LuaTableExpression();
+      // 处理匿名对象的每一个成员
       foreach (var initializer in node.Initializers) {
+        // Debug.Log("[VisitAnonymousObjectCreationExpression] Initializer:" + initializer);
         var item = initializer.Accept<LuaKeyValueTableItemSyntax>(this);
+        // 每一个成员都是一个键值对
         table.Items.Add(item);
       }
+      // 返回一个匿名对象的调用
       return LuaIdentifierNameSyntax.AnonymousType.Invocation(table);
     }
 
