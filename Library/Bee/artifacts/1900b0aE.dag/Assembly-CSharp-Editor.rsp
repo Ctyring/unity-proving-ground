@@ -374,6 +374,7 @@
 "Assets/Script/CSharpToLua/Editor/input/TestDelegateDeclaration.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestGenericClass.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestMethodDeclaration.cs"
+"Assets/Script/CSharpToLua/Editor/input/TestPartialClass.cs"
 "Assets/Script/CSharpToLua/Editor/LuaAst/LuaBlockSyntax.cs"
 "Assets/Script/CSharpToLua/Editor/LuaAst/LuaCompilationUnitSyntax.cs"
 "Assets/Script/CSharpToLua/Editor/LuaAst/LuaExpressionSyntax.cs"

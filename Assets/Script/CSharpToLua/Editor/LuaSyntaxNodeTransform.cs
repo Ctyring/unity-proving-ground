@@ -531,11 +531,22 @@ namespace CSharpLua {
             typeDeclaration.AddMethod(LuaIdentifierNameSyntax.RecordMembers, function, false);
         }
 
+        /// <summary>
+        /// 处理类型声明
+        /// </summary>
+        /// <param name="typeSymbol"></param>
+        /// <param name="node"></param>
+        /// <param name="typeDeclaration"></param>
+        /// <returns></returns>
         private INamedTypeSymbol VisitTypeDeclaration(INamedTypeSymbol typeSymbol, TypeDeclarationSyntax node,
             LuaTypeDeclarationSyntax typeDeclaration) {
             // Debug.Log("[VisitTypeDeclaration]: typeSymbol" + typeSymbol.Name);
+            // 判断是否为partial类
             if (node.Modifiers.IsPartial()) {
+                // Debug.Log("[VisitTypeDeclaration]: typeSymbol.DeclaringSyntaxReferences.Length" + typeSymbol.DeclaringSyntaxReferences.Length);
+                // 判断partial类是否被多次声明，如果只声明一次就按普通声明处理
                 if (typeSymbol.DeclaringSyntaxReferences.Length > 1) {
+                    // 多次声明再标记为partial
                     generator_.AddPartialTypeDeclaration(typeSymbol, node, typeDeclaration, CurCompilationUnit);
                     typeDeclaration.IsPartialMark = true;
                 }
@@ -614,9 +625,9 @@ namespace CSharpLua {
 
         public override LuaSyntaxNode VisitClassDeclaration(ClassDeclarationSyntax node)
         {
-            Debug.Log("[VisitClassDeclaration] class name: " + node);
+            // Debug.Log("[VisitClassDeclaration] class name: " + node);
             GetTypeDeclarationName(node, out var name, out var typeSymbol);
-            Debug.Log("[VisitClassDeclaration] type name: " + name.ValueText);
+            // Debug.Log("[VisitClassDeclaration] type name: " + name.ValueText);
             LuaClassDeclarationSyntax classDeclaration = new LuaClassDeclarationSyntax(name);
             VisitTypeDeclaration(typeSymbol, node, classDeclaration);
             return classDeclaration;

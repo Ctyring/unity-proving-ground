@@ -7,19 +7,22 @@ return function (path)
       "TestClassDeclaration",
       "TestDelegateDeclaration",
       "TestGenericClass",
-      "TestMethodDeclaration"
+      "TestMethodDeclaration",
+      "TestPartialClass"
     },
     types = {
       "Script.CSharpToLua.Editor.input.TestClassDeclaration",
       "Script.CSharpToLua.Editor.input.TestClassDeclaration.A",
       "Script.CSharpToLua.Editor.input.TestGenericClass",
+      "Script.CSharpToLua.Editor.input.TestPartialClass",
       "Script.CSharpToLua.Editor.input.MyClass",
       "Script.CSharpToLua.Editor.input.Person",
       "Script.CSharpToLua.Editor.input.Program",
       "Script.CSharpToLua.Editor.input.TestAmonymousObject",
       "Script.CSharpToLua.Editor.input.TestClassDeclaration.A.B",
       "Script.CSharpToLua.Editor.input.TestGenericClass.Test",
-      "Script.CSharpToLua.Editor.input.TestGenericClass.Test_2"
+      "Script.CSharpToLua.Editor.input.TestGenericClass.Test_2",
+      "Script.CSharpToLua.Editor.input.TestPartialClass.PartialA"
     },
     Main = "Script.CSharpToLua.Editor.input.Program.Main"
   })
