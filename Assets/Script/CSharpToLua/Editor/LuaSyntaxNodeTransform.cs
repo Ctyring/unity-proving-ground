@@ -1013,7 +1013,12 @@ namespace CSharpLua {
             CurType.AddFieldMetaData(data);
         }
 
+        /// <summary>
+        /// 处理字段声明和事件声明
+        /// </summary>
+        /// <param name="node"></param>
         private void VisitBaseFieldDeclarationSyntax(BaseFieldDeclarationSyntax node) {
+            // 判断是否是const
             if (!node.Modifiers.IsConst()) {
                 bool isStatic = node.Modifiers.IsStatic();
                 bool isReadOnly = node.Modifiers.IsReadOnly();
@@ -1073,18 +1078,23 @@ namespace CSharpLua {
                 }
             }
             else {
+                // const 处理
                 var type = node.Declaration.Type;
                 ITypeSymbol typeSymbol = (ITypeSymbol)semanticModel_.GetSymbolInfo(type).Symbol;
+                // 判断类型是否是System.String
                 if (typeSymbol.SpecialType == SpecialType.System_String) {
                     foreach (var variable in node.Declaration.Variables) {
                         var constValue = semanticModel_.GetConstantValue(variable.Initializer.Value);
                         Contract.Assert(constValue.HasValue);
                         string v = (string)constValue.Value;
+                        // Debug.Log("[VisitBaseFieldDeclarationSyntax] v: " + v);
+                        // 如果长度过大就不直接替换
                         if (v?.Length > kStringConstInlineCount) {
                             var variableSymbol = semanticModel_.GetDeclaredSymbol(variable);
                             bool isPrivate = generator_.IsPrivate(variableSymbol);
                             var fieldName = GetMemberName(variableSymbol);
                             bool isMoreThanLocalVariables = IsMoreThanLocalVariables(variableSymbol);
+                            // 正常添加为字段
                             AddField(fieldName, typeSymbol, variable.Initializer.Value, true, true, isPrivate, true,
                                 isMoreThanLocalVariables);
                         }
@@ -1093,6 +1103,11 @@ namespace CSharpLua {
             }
         }
 
+        /// <summary>
+        /// 处理字段声明
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
         public override LuaSyntaxNode VisitFieldDeclaration(FieldDeclarationSyntax node) {
             Debug.Log("[VisitFieldDeclaration] node: " + node);
             VisitBaseFieldDeclarationSyntax(node);
@@ -1138,6 +1153,18 @@ namespace CSharpLua {
             return valueExpression;
         }
 
+        /// <summary>
+        /// 添加字段
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="typeSymbol"></param>
+        /// <param name="expression"></param>
+        /// <param name="isImmutable"></param>
+        /// <param name="isStatic"></param>
+        /// <param name="isPrivate"></param>
+        /// <param name="isReadOnly"></param>
+        /// <param name="isMoreThanLocalVariables"></param>
+        /// <param name="isMoreThanUpValueStaticInit"></param>
         private void AddField(LuaIdentifierNameSyntax name, ITypeSymbol typeSymbol, ExpressionSyntax expression,
             bool isImmutable, bool isStatic, bool isPrivate, bool isReadOnly, bool isMoreThanLocalVariables = false,
             bool isMoreThanUpValueStaticInit = false) {

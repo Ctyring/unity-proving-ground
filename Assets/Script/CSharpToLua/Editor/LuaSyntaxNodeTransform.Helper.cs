@@ -431,7 +431,7 @@ namespace CSharpLua {
     }
 
     /// <summary>
-    /// 判断是否是局部变量
+    /// 判断是否超过本地变量的数量上限
     /// </summary>
     /// <param name="symbol"></param>
     /// <returns></returns>
