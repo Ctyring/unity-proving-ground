@@ -351,11 +351,17 @@ namespace CSharpLua {
       return null;
     }
 
+    /// <summary>
+    /// 构造函数声明
+    /// </summary>
+    /// <param name="node"></param>
+    /// <returns></returns>
     public override LuaSyntaxNode VisitConstructorDeclaration(ConstructorDeclarationSyntax node) {
       if (node.Modifiers.IsExtern()) {
         return null;
       }
 
+      // 从node中取出基本信息
       IMethodSymbol symbol = semanticModel_.GetDeclaredSymbol(node);
       methodInfos_.Push(new MethodInfo(symbol));
 
@@ -369,18 +375,24 @@ namespace CSharpLua {
       bool isStatic = node.Modifiers.IsStatic();
       function.IsStatic = isStatic;
       function.AddParameter(LuaIdentifierNameSyntax.This);
+      
+      // 处理参数
       foreach (var parameterNode in node.ParameterList.Parameters) {
         var parameter = parameterNode.Accept<LuaIdentifierNameSyntax>(this);
         function.AddParameter(parameter);
+        // 处理修饰符 ref out
         if (parameterNode.Modifiers.IsOutOrRef()) {
           refOrOutParameters.Add(parameter);
         }
       }
 
+      // 构造器  : this(args){}
       if (node.Initializer != null) {
+        // Debug.Log("[VisitConstructorDeclaration] node.Initializer: " + node.Initializer);
         var initializerSymbol = (IMethodSymbol)semanticModel_.GetSymbolInfo(node.Initializer).Symbol;
         int ctorIndex = GetConstructorIndex(initializerSymbol);
         LuaInvocationExpressionSyntax otherCtorInvoke = null;
+        // 是this还是base
         if (node.Initializer.IsKind(SyntaxKind.ThisConstructorInitializer)) {
           Contract.Assert(ctorIndex != 0);
           if (!symbol.IsCombineImplicitlyCtorMethod(out _)) {
@@ -392,6 +404,7 @@ namespace CSharpLua {
           otherCtorInvoke = BuildCallBaseConstructor(symbol.ContainingType, initializerSymbol.ReceiverType, ctorIndex);
         }
 
+        // 处理对其他构造器的调用
         if (otherCtorInvoke != null) {
           otherCtorInvoke.AddArgument(LuaIdentifierNameSyntax.This);
           var refOrOutArguments = new List<RefOrOutArgument>();
@@ -405,12 +418,15 @@ namespace CSharpLua {
             function.AddStatement(newExpression);
           }
         }
-      } else if (!isStatic && generator_.IsBaseExplicitCtorExists(symbol.ContainingType.BaseType)) {
+      } 
+      // 判断是否存在基类构造器
+      else if (!isStatic && generator_.IsBaseExplicitCtorExists(symbol.ContainingType.BaseType)) {
         var baseCtorInvoke = BuildCallBaseConstructor(symbol.ContainingType, out _);
         Contract.Assert(baseCtorInvoke != null);
         function.AddStatement(baseCtorInvoke);
       }
 
+      // 判断是否生成隐式构造函数
       bool isCombineImplicitlyCtorMethod = false;
       if (symbol.IsCombineImplicitlyCtorMethod(out int notNullParameterIndex)) {
         var parameter = function.ParameterList.Parameters[notNullParameterIndex + 1];
@@ -420,6 +436,7 @@ namespace CSharpLua {
         isCombineImplicitlyCtorMethod = true;
       }
 
+      // 处理函数体
       if (node.Body != null) {
         var block = node.Body.Accept<LuaBlockSyntax>(this);
         function.AddStatements(block.Statements);
@@ -428,6 +445,7 @@ namespace CSharpLua {
         function.AddStatement(bodyExpression);
       }
 
+      // 把ref out参数放到return中
       if (refOrOutParameters.Count > 0) {
         var returnStatement = new LuaReturnStatementSyntax();
         returnStatement.Expressions.AddRange(refOrOutParameters);
@@ -436,6 +454,7 @@ namespace CSharpLua {
 
       PopFunction();
 
+      // 添加构造函数到类
       if (isStatic) {
         CurType.SetStaticCtor(function, document);
       } else {
@@ -465,6 +484,11 @@ namespace CSharpLua {
       return function;
     }
 
+    /// <summary>
+    /// 处理析构函数
+    /// </summary>
+    /// <param name="node"></param>
+    /// <returns></returns>
     public override LuaSyntaxNode VisitDestructorDeclaration(DestructorDeclarationSyntax node) {
       if (node.Body != null || node.ExpressionBody != null) {
         IMethodSymbol ctorSymbol = semanticModel_.GetDeclaredSymbol(node);
@@ -474,6 +498,8 @@ namespace CSharpLua {
         PushFunction(function);
 
         function.AddParameter(LuaIdentifierNameSyntax.This);
+        
+        // 函数或表达式
         if (node.Body != null) {
           var block = node.Body.Accept<LuaBlockSyntax>(this);
           function.Body.Statements.AddRange(block.Statements);

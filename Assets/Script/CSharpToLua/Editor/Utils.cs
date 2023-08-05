@@ -1359,6 +1359,12 @@ namespace CSharpLua {
       return symbol.OriginalDefinition.FindNotNullParameterIndex() != -1;
     }
 
+    /// <summary>
+    /// 判断是否为隐式构造函数
+    /// </summary>
+    /// <param name="symbol"></param>
+    /// <param name="notNullParameterIndex"></param>
+    /// <returns></returns>
     public static bool IsCombineImplicitlyCtorMethod(this IMethodSymbol symbol, out int notNullParameterIndex) {
       notNullParameterIndex = -1;
 

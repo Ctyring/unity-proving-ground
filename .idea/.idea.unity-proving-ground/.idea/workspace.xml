@@ -5,16 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f5e77e-6fec-4ac9-bff8-a20e8c73f0aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestExtensionMethod.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestExtensionMethod.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestLifeMethod.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestLifeMethod.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity-proving-ground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity-proving-ground/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.Object.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.Object.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/Utils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/Utils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/output/manifest.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/output/manifest.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/37/3749ba5c4791ced921213f8af33981ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/57/577df0b519a995671d6037f5cc2e3948" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/84/8425dc5ddad9e4d971683741566666aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/19/193b62e257dd9377c53dc78525ea1f1b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/2a/2af9dd783d0885bfcef13e2bbf5b8cd0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/a7/a77b1952279b990e92a00a6336b0222d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c8/c819f3888316cc5f49ed802fb0a12cbe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/cd/cd48cb78e60193a3a6ad049353ee602b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" afterDir="false" />
@@ -36,9 +39,9 @@
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Search/transactions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Search/transactions.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +55,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/012ca6023c754e6384f20d14e09f256e5789b8/b9/5574e2b0/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1a14c3b32ee64d86894622ccb459de4e445478/03/dbeb69c0/SymbolKind.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1a14c3b32ee64d86894622ccb459de4e445478/bc/0864a1fc/IMethodSymbol.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d96f5cea53c437bba7ad853988ca29d681c80/55/7a7a5b9d/ParameterSyntax.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d96f5cea53c437bba7ad853988ca29d681c80/67/ef97275d/CSharpSyntaxVisitor`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6d96f5cea53c437bba7ad853988ca29d681c80/a6/d7a16d30/TypeDeclarationSyntax.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@2.0.4/Editor/PlasticSCM/Views/CreateWorkspace/Dialogs/RepositoryExplorerDialog.cs" root0="SKIP_HIGHLIGHTING" />
@@ -261,7 +265,7 @@
       <workItem from="1690889057171" duration="6238000" />
       <workItem from="1690983621067" duration="3875000" />
       <workItem from="1691069378965" duration="1987000" />
-      <workItem from="1691156283030" duration="12854000" />
+      <workItem from="1691156283030" duration="18775000" />
     </task>
     <servers />
   </component>
