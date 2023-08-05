@@ -8,6 +8,7 @@ return function (path)
       "TestDelegateDeclaration",
       "TestField",
       "TestGenericClass",
+      "TestIndexer",
       "TestMethodDeclaration",
       "TestPartialClass",
       "TestProperty"
@@ -26,6 +27,7 @@ return function (path)
       "Script.CSharpToLua.Editor.input.TestField",
       "Script.CSharpToLua.Editor.input.TestGenericClass.Test",
       "Script.CSharpToLua.Editor.input.TestGenericClass.Test_2",
+      "Script.CSharpToLua.Editor.input.TestIndexer",
       "Script.CSharpToLua.Editor.input.TestPartialClass.PartialA",
       "Script.CSharpToLua.Editor.input.TestProperty"
     },

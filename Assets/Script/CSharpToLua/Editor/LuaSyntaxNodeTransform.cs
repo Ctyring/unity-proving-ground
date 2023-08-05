@@ -1461,14 +1461,21 @@ namespace CSharpLua {
             return new LuaKeyValueTableItemSyntax(identifier, value);
         }
 
+        /// <summary>
+        /// 遍历索引器
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
         public override LuaSyntaxNode VisitIndexerDeclaration(IndexerDeclarationSyntax node) {
+            // Debug.Log("[VisitIndexerDeclaration] node: " + node);
             var symbol = semanticModel_.GetDeclaredSymbol(node);
             if (!symbol.IsAbstract) {
                 bool isPrivate = symbol.IsPrivate();
                 var indexName = GetMemberName(symbol);
                 var parameterList = node.ParameterList.Accept<LuaParameterListSyntax>(this);
 
-                void Fill(Action<LuaFunctionExpressionSyntax, LuaPropertyOrEventIdentifierNameSyntax> action) {
+                // 构建get set方法
+                void Build(Action<LuaFunctionExpressionSyntax, LuaPropertyOrEventIdentifierNameSyntax> action) {
                     var function = new LuaFunctionExpressionSyntax();
                     function.AddParameter(LuaIdentifierNameSyntax.This);
                     function.ParameterList.Parameters.AddRange(parameterList.Parameters);
@@ -1479,9 +1486,10 @@ namespace CSharpLua {
                     CurType.AddMethod(name, function, isPrivate);
                 }
 
+                // 访问器列表
                 if (node.AccessorList != null) {
                     foreach (var accessor in node.AccessorList.Accessors) {
-                        Fill((function, name) => {
+                        Build((function, name) => {
                             bool isGet = accessor.IsKind(SyntaxKind.GetAccessorDeclaration);
                             if (accessor.Body != null) {
                                 var block = accessor.Body.Accept<LuaBlockSyntax>(this);
@@ -1504,8 +1512,9 @@ namespace CSharpLua {
                         });
                     }
                 }
+                // 表达式体
                 else {
-                    Fill((function, name) => {
+                    Build((function, name) => {
                         var bodyExpression = node.ExpressionBody.AcceptExpression(this);
                         function.AddStatement(new LuaReturnStatementSyntax(bodyExpression));
                     });
