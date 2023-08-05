@@ -1753,6 +1753,9 @@ namespace CSharpLua {
         }
 
         bool isMoreThanLocalVariables = index + symbol.ContainingType.Constructors.Length > kMaxLocalVariablesCount;
+        if (isMoreThanLocalVariables) {
+          Debug.LogError("[IsMoreThanLocalVariables] symbol: " + symbol + " kind: " + symbol.Kind + " index: " + index + " methods: " + methods.Count);
+        }
         return isMoreThanLocalVariables;
       });
     }

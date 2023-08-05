@@ -1020,18 +1020,22 @@ namespace CSharpLua {
         private void VisitBaseFieldDeclarationSyntax(BaseFieldDeclarationSyntax node) {
             // 判断是否是const
             if (!node.Modifiers.IsConst()) {
+                // static标记
                 bool isStatic = node.Modifiers.IsStatic();
+                // readonly标记
                 bool isReadOnly = node.Modifiers.IsReadOnly();
+                // attributes
                 var attributes = BuildAttributes(node.AttributeLists);
                 var type = node.Declaration.Type;
                 ITypeSymbol typeSymbol = (ITypeSymbol)semanticModel_.GetSymbolInfo(type).Symbol;
+                // 不可变类型
                 bool isImmutable = typeSymbol.IsImmutable();
                 foreach (var variable in node.Declaration.Variables) {
                     var variableSymbol = semanticModel_.GetDeclaredSymbol(variable);
                     if (variableSymbol.IsAbstract) {
                         continue;
                     }
-
+                    // 事件字段
                     if (node.IsKind(SyntaxKind.EventFieldDeclaration)) {
                         var eventSymbol = (IEventSymbol)variableSymbol;
                         if (!IsEventField(eventSymbol)) {
@@ -1055,7 +1059,8 @@ namespace CSharpLua {
                             continue;
                         }
                     }
-
+                    
+                    // 普通字段属性
                     bool isPrivate = generator_.IsPrivate(variableSymbol);
                     var fieldName = GetMemberName(variableSymbol);
                     var value = variable.Initializer?.Value;
@@ -1064,9 +1069,11 @@ namespace CSharpLua {
                     if (IsLuaClassic && value != null && !isImmutable && isStatic && (isPrivate || isReadOnly)) {
                         isMoreThanUpValueStaticInit = IsMoreThanUpValueStaticInitField(variableSymbol);
                     }
-
+                    
+                    // 保存字段数据
                     AddField(fieldName, typeSymbol, value, isImmutable, isStatic, isPrivate, isReadOnly,
                         isMoreThanLocalVariables, isMoreThanUpValueStaticInit);
+                    // 添加元数据的条件: 1、serializable 2、有attributes 3、有metadataAttribute(来自注释)
                     if (IsCurTypeSerializable || attributes.Count > 0 || variableSymbol.HasMetadataAttribute()) {
                         if (variableSymbol.Kind == SymbolKind.Field) {
                             AddFieldMetaData((IFieldSymbol)variableSymbol, fieldName, attributes);

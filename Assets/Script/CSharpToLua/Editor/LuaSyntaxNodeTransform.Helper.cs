@@ -1221,7 +1221,7 @@ namespace CSharpLua {
     }
 
     /// <summary>
-    /// 构建Attribute
+    /// 构建Attributes，将attritue逐个以表达式的方式构建
     /// </summary>
     /// <param name="attributeLists"></param>
     /// <returns></returns>
@@ -1229,7 +1229,7 @@ namespace CSharpLua {
       var expressions = new List<LuaExpressionSyntax>();
       var attributes = attributeLists.SelectMany(i => i.Attributes);
       foreach (var node in attributes) {
-        // Debug.Log("Attribute: " + node);
+        // Debug.Log("[BuildAttributes] node: " + node);
         var expression = node.AcceptExpression(this);
         if (expression != null) {
           expressions.Add(expression);

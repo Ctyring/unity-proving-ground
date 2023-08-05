@@ -451,6 +451,11 @@ namespace CSharpLua {
       return false;
     }
 
+    /// <summary>
+    /// 判断符号是否是不可变类型
+    /// </summary>
+    /// <param name="type"></param>
+    /// <returns></returns>
     public static bool IsImmutable(this ITypeSymbol type) {
       bool isImmutable = (type.IsValueType && type.IsDefinition) || type.IsStringType() || type.IsDelegateType();
       return isImmutable;

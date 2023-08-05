@@ -2,12 +2,25 @@
 local System = System
 System.namespace("Script.CSharpToLua.Editor.input", function (namespace)
   namespace.class("TestField", function (namespace)
-    local hello, Test
-    hello = "hellohellohellohellohellohellohellohellohellohelhellohellohellohellohellohellohellolohellohellohellohellohellohellohellohellohellohello"
-    Test = function (this)
-      local ss = hello
-      local b = 1 --[[TestField.a]]
-    end
+    local a
+    a = 1
+    return {
+      b = 3,
+      c = 0,
+      testAttribute = 1,
+      __metadata__ = function (out)
+        return {
+          fields = {
+            { "testAttribute", 0x6, System.Int32, System.ObsoleteAttribute("This is obsolete") }
+          }
+        }
+      end
+    }
+  end)
+
+  namespace.class("Test", function (namespace)
+    local a
+    a = 1
     return {}
   end)
 end)

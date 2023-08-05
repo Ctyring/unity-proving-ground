@@ -53,6 +53,7 @@
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaFunctionExpressSyntax.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.Helper.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestField.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\XmlMetaProvider.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaBlockSyntax.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaInvocationExpressionSyntax.cs" />
@@ -74,7 +75,6 @@
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestGenericClass.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestPartialClass.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestMethodDeclaration.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestField.cs" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\CoreSystem\Reflection" />
      <Folder Include="Assets\Script\CSharpToLua\Editor" />
      <Folder Include="Assets\NuGet\Editor" />
