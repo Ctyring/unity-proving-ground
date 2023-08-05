@@ -372,6 +372,7 @@
 "Assets/Script/CSharpToLua/Editor/input/TestAmonymousObject.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestClassDeclaration.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestDelegateDeclaration.cs"
+"Assets/Script/CSharpToLua/Editor/input/TestExtensionMethod.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestField.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestGenericClass.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestIndexer.cs"

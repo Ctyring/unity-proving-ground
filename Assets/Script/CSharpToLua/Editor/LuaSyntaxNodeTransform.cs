@@ -840,6 +840,7 @@ namespace CSharpLua {
             var attributes = BuildAttributes(attributeLists);
             // 遍历参数列表
             foreach (var parameterNode in parameterList.Parameters) {
+                Debug.Log("[BuildMethodDeclaration] parameterNode: " + parameterNode.Identifier.ValueText);
                 // 调用visitParameter
                 var parameter = parameterNode.Accept<LuaIdentifierNameSyntax>(this);
                 function.AddParameter(parameter);
@@ -856,10 +857,12 @@ namespace CSharpLua {
                 function.AddParameters(typeParameters.Parameters);
             }
 
+            // body
             if (body != null) {
                 var block = body.Accept<LuaBlockSyntax>(this);
                 function.AddStatements(block.Statements);
             }
+            // 表达式
             else {
                 var expression = expressionBody.AcceptExpression(this);
                 if (symbol.ReturnsVoid) {
@@ -929,6 +932,8 @@ namespace CSharpLua {
                 bool isMoreThanLocalVariables = IsMoreThanLocalVariables(result.Symbol);
                 CurType.AddMethod(result.Name, result.Function, result.IsPrivate, result.Document,
                     isMoreThanLocalVariables, result.Symbol.IsInterfaceDefaultMethod());
+                
+                // 元数据
                 if (IsCurTypeExportMetadataAll || result.Attributes.Count > 0 || result.IsMetadata) {
                     AddMethodMetaData(result, isMoreThanLocalVariables);
                 }

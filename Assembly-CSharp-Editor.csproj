@@ -66,6 +66,7 @@
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestDelegateDeclaration.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaSyntaxNodeTransform.Object.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestClassDeclaration.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestIndexer.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\CSharpToLuaWindow.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaRenderer.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\LuaAst\LuaCompilationUnitSyntax.cs" />
@@ -76,7 +77,7 @@
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestGenericClass.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestPartialClass.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestMethodDeclaration.cs" />
-     <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestIndexer.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestExtensionMethod.cs" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\CoreSystem\Reflection" />
      <Folder Include="Assets\Script\CSharpToLua\Editor" />
      <Folder Include="Assets\NuGet\Editor" />
