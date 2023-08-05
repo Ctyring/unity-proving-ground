@@ -9,7 +9,8 @@ return function (path)
       "TestField",
       "TestGenericClass",
       "TestMethodDeclaration",
-      "TestPartialClass"
+      "TestPartialClass",
+      "TestProperty"
     },
     types = {
       "Script.CSharpToLua.Editor.input.TestClassDeclaration",
@@ -25,7 +26,8 @@ return function (path)
       "Script.CSharpToLua.Editor.input.TestField",
       "Script.CSharpToLua.Editor.input.TestGenericClass.Test",
       "Script.CSharpToLua.Editor.input.TestGenericClass.Test_2",
-      "Script.CSharpToLua.Editor.input.TestPartialClass.PartialA"
+      "Script.CSharpToLua.Editor.input.TestPartialClass.PartialA",
+      "Script.CSharpToLua.Editor.input.TestProperty"
     },
     Main = "Script.CSharpToLua.Editor.input.Program.Main"
   })

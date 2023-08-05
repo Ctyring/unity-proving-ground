@@ -1248,10 +1248,17 @@ namespace CSharpLua {
             }
         }
 
+        /// <summary>
+        /// 遍历属性节点
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
         public override LuaSyntaxNode VisitPropertyDeclaration(PropertyDeclarationSyntax node) {
-            Debug.Log("[VisitPropertyDeclaration] node: " + node);
+            // Debug.Log("[VisitPropertyDeclaration] node: " + node);
             var symbol = semanticModel_.GetDeclaredSymbol(node);
+            // 忽略抽象的属性
             if (!symbol.IsAbstract) {
+                // 基本属性构建
                 bool isStatic = symbol.IsStatic;
                 bool isPrivate = generator_.IsPrivate(symbol) && symbol.ExplicitInterfaceImplementations.IsEmpty;
                 bool hasGet = false;
@@ -1261,6 +1268,7 @@ namespace CSharpLua {
                 PropertyMethodResult getMethod = null;
                 PropertyMethodResult setMethod = null;
                 if (node.AccessorList != null) {
+                    // 遍历属性的访问器 get set
                     foreach (var accessor in node.AccessorList.Accessors) {
                         if (accessor.Body != null || accessor.ExpressionBody != null) {
                             var accessorSymbol = semanticModel_.GetDeclaredSymbol(accessor);
@@ -1272,11 +1280,14 @@ namespace CSharpLua {
                                 functionExpression.AddParameter(LuaIdentifierNameSyntax.This);
                             }
 
+                            // 处理访问器方法
                             PushFunction(functionExpression);
+                            // 如果方法体不为空，按照方法体处理
                             if (accessor.Body != null) {
                                 var block = accessor.Body.Accept<LuaBlockSyntax>(this);
                                 functionExpression.AddStatements(block.Statements);
                             }
+                            // 否则就是表达式格式的 get => name 
                             else {
                                 var bodyExpression = accessor.ExpressionBody.AcceptExpression(this);
                                 if (isGet) {
@@ -1288,14 +1299,16 @@ namespace CSharpLua {
                                     }
                                 }
                             }
-
+                            
+                            // 处理 yield
                             if (methodInfo.HasYield) {
                                 VisitYield(accessorSymbol, functionExpression);
                             }
 
                             PopFunction();
                             methodInfos_.Pop();
-
+                            
+                            // 处理属性的参数
                             var name = new LuaPropertyOrEventIdentifierNameSyntax(true, propertyName);
                             CurType.AddMethod(name, functionExpression, isPrivate, null,
                                 IsMoreThanLocalVariables(accessorSymbol));
@@ -1317,6 +1330,7 @@ namespace CSharpLua {
                     }
                 }
                 else {
+                    // 直接使用表达式格式的属性
                     Contract.Assert(!hasGet);
                     methodInfos_.Push(new MethodInfo(symbol.GetMethod));
                     var name = new LuaPropertyOrEventIdentifierNameSyntax(true, propertyName);
@@ -1337,12 +1351,18 @@ namespace CSharpLua {
                     getMethod = new PropertyMethodResult(name);
                 }
 
+                // get set访问器都默认
                 if (!hasGet && !hasSet) {
+                    Debug.Log("[VisitPropertyDeclaration] no accessor property: " + node);
                     ITypeSymbol typeSymbol = symbol.Type;
+                    // 不可变类型
                     bool isImmutable = typeSymbol.IsImmutable();
+                    // 是否是字段属性
                     bool isField = IsPropertyField(semanticModel_.GetDeclaredSymbol(node));
                     if (isField) {
+                        Debug.Log("[VisitPropertyDeclaration] is field property: " + node);
                         bool isReadOnly = IsReadOnlyProperty(node);
+                        // 按照字段去构建
                         AddField(propertyName, typeSymbol, node.Initializer?.Value, isImmutable, isStatic, isPrivate,
                             isReadOnly);
                     }
@@ -1363,6 +1383,7 @@ namespace CSharpLua {
                     }
                 }
 
+                // 元数据
                 if (IsCurTypeSerializable || attributes.Count > 0 || symbol.HasMetadataAttribute()) {
                     AddPropertyOrEventMetaData(symbol, getMethod, setMethod, propertyName, attributes);
                 }
