@@ -375,6 +375,7 @@
 "Assets/Script/CSharpToLua/Editor/input/TestExtensionMethod.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestField.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestGenericClass.cs"
+"Assets/Script/CSharpToLua/Editor/input/TestGenericMethod.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestIndexer.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestLifeMethod.cs"
 "Assets/Script/CSharpToLua/Editor/input/TestMethodDeclaration.cs"
