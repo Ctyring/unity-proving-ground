@@ -11,6 +11,7 @@ return function (path)
       "TestGenericClass",
       "TestGenericMethod",
       "TestIndexer",
+      "TestLambda",
       "TestLifeMethod",
       "TestMethodDeclaration",
       "TestPartialClass",
@@ -34,6 +35,7 @@ return function (path)
       "Script.CSharpToLua.Editor.input.TestGenericClass.Test_2",
       "Script.CSharpToLua.Editor.input.TestGenericMethod",
       "Script.CSharpToLua.Editor.input.TestIndexer",
+      "Script.CSharpToLua.Editor.input.TestLambda",
       "Script.CSharpToLua.Editor.input.TestLifeMethod",
       "Script.CSharpToLua.Editor.input.TestPartialClass.PartialA",
       "Script.CSharpToLua.Editor.input.TestProperty"

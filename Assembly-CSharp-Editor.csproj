@@ -80,6 +80,7 @@
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestPartialClass.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestGenericMethod.cs" />
      <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestMethodDeclaration.cs" />
+     <Compile Include="Assets\Script\CSharpToLua\Editor\input\TestLambda.cs" />
      <Folder Include="Assets\Script\CSharpToLua\Editor\CoreSystem.Lua\CoreSystem\Reflection" />
      <Folder Include="Assets\Script\CSharpToLua\Editor" />
      <Folder Include="Assets\NuGet\Editor" />

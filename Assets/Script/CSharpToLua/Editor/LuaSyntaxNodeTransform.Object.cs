@@ -521,6 +521,12 @@ namespace CSharpLua {
       return node.Type.Accept(this);
     }
 
+    /// <summary>
+    /// 处理lambda表达式
+    /// </summary>
+    /// <param name="parameters"></param>
+    /// <param name="body"></param>
+    /// <returns></returns>
     private LuaExpressionSyntax VisitLambdaExpression(IEnumerable<ParameterSyntax> parameters, CSharpSyntaxNode body) {
       var symbol = (IMethodSymbol)semanticModel_.GetSymbolInfo(body.Parent).Symbol;
       methodInfos_.Push(new MethodInfo(symbol));
@@ -535,6 +541,7 @@ namespace CSharpLua {
         }
       }
 
+      // 构建一个function去替换lambda
       LuaExpressionSyntax resultExpression = function;
       if (body.IsKind(SyntaxKind.Block)) {
         var block = body.Accept<LuaBlockSyntax>(this);
@@ -568,14 +575,17 @@ namespace CSharpLua {
     }
 
     public override LuaSyntaxNode VisitSimpleLambdaExpression(SimpleLambdaExpressionSyntax node) {
+      Debug.Log("[VisitSimpleLambdaExpression] node: " + node);
       return VisitLambdaExpression(new[] { node.Parameter }, node.Body);
     }
 
     public override LuaSyntaxNode VisitParenthesizedLambdaExpression(ParenthesizedLambdaExpressionSyntax node) {
+      Debug.Log("[VisitParenthesizedLambdaExpression] node: " + node);
       return VisitLambdaExpression(node.ParameterList.Parameters, node.Body);
     }
 
     public override LuaSyntaxNode VisitAnonymousMethodExpression(AnonymousMethodExpressionSyntax node) {
+      Debug.Log("[VisitAnonymousMethodExpression] node: " + node);
       return VisitLambdaExpression(node.ParameterList?.Parameters, node.Body);
     }
 

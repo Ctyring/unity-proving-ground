@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1f5e77e-6fec-4ac9-bff8-a20e8c73f0aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestGenericMethod.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestGenericMethod.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestLambda.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/input/TestLambda.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.unity-proving-ground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.unity-proving-ground/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.Object.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/LuaSyntaxNodeTransform.Object.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/output/manifest.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CSharpToLua/Editor/output/manifest.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3a/3a1925773fd1bc6fdaa8be51cacab2d5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/c3/c3f2d32bb41050dfacfab164432eb316" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/48/4887fda351883236b031e5ef65777588" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d4/d41cbab01caa17f4bc8bc9dc61052a7f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE-inputdata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/Bee/1900b0aE.dag.json" afterDir="false" />
@@ -37,6 +38,7 @@
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/4d/4d2a36d9faf65734f0bbefb3ee623532.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/com.unity.ide.rider/PersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +262,8 @@
       <workItem from="1690889057171" duration="6238000" />
       <workItem from="1690983621067" duration="3875000" />
       <workItem from="1691069378965" duration="1987000" />
-      <workItem from="1691156283030" duration="19827000" />
+      <workItem from="1691156283030" duration="20052000" />
+      <workItem from="1691414023463" duration="2151000" />
     </task>
     <servers />
   </component>
